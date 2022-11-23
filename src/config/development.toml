@@ -1,8 +1,10 @@
-###############################################################################
-## This configuration is active and overwiting the of the default.toml file   #
-## either if the RUN_MODE evironment variable has the value "development"     #
-## or the RUN_MODE evironment variable is not defined                         #
-###############################################################################
+###########################################################################
+## This configuration file is active                                      #
+## either if the RUN_MODE evironment variable has the value "development" #
+## or the RUN_MODE evironment variable is not defined.                    #
+## If the file is active, then the params specified in this file will     #
+## overwite the params in the default.toml file.                          #
+###########################################################################
 
 # debug = true
 default_key = "00000000000000000000000000000001"
@@ -18,4 +20,4 @@ url = "https://webhook.site/0652c864-00c9-46ce-994f-c48c689f2204"
 [log]
 # dir = "log"
 # file_size = 100000    # bytes
-# level = "Info"       # Off|Error|Warn|Info|Debug|Trace,
+level = "Info"       # Off|Error|Warn|Info|Debug|Trace,
