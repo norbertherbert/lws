@@ -1,0 +1,15 @@
+debug = true
+default_key = "00000000000000000000000000000000"
+
+[udp_server]
+addr = "0.0.0.0:1700"
+
+[remote_application_server]
+url = "http://localhost"
+timeout = 5           # seconds
+forward_incorrect_mic = false
+
+[log]
+dir = "log"
+file_size = 100000    # bytes
+level = "Debug"       # Off|Error|Warn|Info|Debug|Trace,

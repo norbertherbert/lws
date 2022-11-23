@@ -1,0 +1,8 @@
+########################################################################
+## This configuration file is active only                              #
+## if the RUN_MODE evironment variable has the value "production".     #
+## The params specified in this file will allways overwite the params  #
+## in the default.toml file                                            #
+########################################################################
+
+debug = false

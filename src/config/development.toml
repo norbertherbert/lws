@@ -1,0 +1,21 @@
+###############################################################################
+## This configuration is active and overwiting the of the default.toml file   #
+## either if the RUN_MODE evironment variable has the value "development"     #
+## or the RUN_MODE evironment variable is not defined                         #
+###############################################################################
+
+# debug = true
+default_key = "00000000000000000000000000000001"
+
+[udp_server]
+# addr = "192.168.1.200:1700"
+
+[remote_application_server]
+url = "https://webhook.site/0652c864-00c9-46ce-994f-c48c689f2204"
+# timeout = 5           # seconds
+# forward_incorrect_mic = false
+
+[log]
+# dir = "log"
+# file_size = 100000    # bytes
+# level = "Info"       # Off|Error|Warn|Info|Debug|Trace,

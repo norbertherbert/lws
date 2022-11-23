@@ -1,0 +1,145 @@
+2022-11-23 14:17:27 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "192.168.1.200:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/055b6696-9166-4209-9ba1-9b19f4e46476", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2022-11-23 14:22:10 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/055b6696-9166-4209-9ba1-9b19f4e46476", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2022-11-23 14:32:20 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/055b6696-9166-4209-9ba1-9b19f4e46476", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2022-11-23 14:34:22 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.200:54366 401d0c0004c0b800643bcebf7601fb45
+2022-11-23 14:34:22 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 14:34:22 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          184
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: 3bcebf
+    MIC:           7601fb45
+    calcMIC:       7601fb45
+2022-11-23 14:34:22 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 14:34:22 | DEBUG | starting new connection: https://webhook.site/
+2022-11-23 14:34:31 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 401d0c0004c05b0164a12b5745b0f47c
+2022-11-23 14:34:31 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 14:34:31 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          347
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: a12b57
+    MIC:           45b0f47c
+    calcMIC:       45b0f47c
+2022-11-23 14:34:31 | INFO  | DevAddr: 0x04000c1d, FCnt: 347, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 14:34:31 | DEBUG | starting new connection: https://webhook.site/
+2022-11-23 14:37:10 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 8024473601809a4c1199ed4223921d93d26f
+2022-11-23 14:37:10 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 14:37:10 | DEBUG | phy_data_comps: 
+    MHDR:          0x80
+    DevAddr:       0x01364724
+    FCtrl:         0x80
+    FCnt:          19610
+    FOpts:         
+    FPort:         17
+    FRMPayload:    b257e940f0
+    encFRMPayload: 99ed422392
+    MIC:           1d93d26f
+    calcMIC:       b5ea6aad
+2022-11-23 14:37:10 | INFO  | DevAddr: 0x01364724, FCnt: 19610, FPort: 17, Data: "b257e940f0", MIC_ok: false
+2022-11-23 14:39:36 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 4030da000132867d6500d0b0006d8c8532295abfba39c9eda581f69ca2a83ea42f5962ee2c0760174e679483acc1b3f130523c82
+2022-11-23 14:39:36 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 14:39:36 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x0100da30
+    FCtrl:         0x32
+    FCnt:          32134
+    FOpts:         6500
+    FPort:         208
+    FRMPayload:    0ec94a186d59c5d30d88c489553e4c96cff8ec7cdc27e54e16123c694538d70b3e2d594e75
+    encFRMPayload: b0006d8c8532295abfba39c9eda581f69ca2a83ea42f5962ee2c0760174e679483acc1b3f1
+    MIC:           30523c82
+    calcMIC:       9d9f29e9
+2022-11-23 14:39:36 | INFO  | DevAddr: 0x0100da30, FCnt: 32134, FPort: 208, Data: "0ec94a186d59c5d30d88c489553e4c96cff8ec7cdc27e54e16123c694538d70b3e2d594e75", MIC_ok: false
+2022-11-23 14:40:24 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 40a702000487e70f0307050706ee06127f318a5a1c233726b8f407226b4c7b3a
+2022-11-23 14:40:24 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 14:40:24 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x040002a7
+    FCtrl:         0x87
+    FCnt:          4071
+    FOpts:         0307050706ee06
+    FPort:         18
+    FRMPayload:    e88f721046e0f87eff03b23b
+    encFRMPayload: 7f318a5a1c233726b8f40722
+    MIC:           6b4c7b3a
+    calcMIC:       5931d63f
+2022-11-23 14:40:24 | INFO  | DevAddr: 0x040002a7, FCnt: 4071, FPort: 18, Data: "e88f721046e0f87eff03b23b", MIC_ok: false
+2022-11-23 14:40:42 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 4034060b268172070212296a17a9ef9bcc4216701092e64f89c7
+2022-11-23 14:40:42 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 14:40:42 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x260b0634
+    FCtrl:         0x81
+    FCnt:          1906
+    FOpts:         02
+    FPort:         18
+    FRMPayload:    34808258622e9024f1740611
+    encFRMPayload: 296a17a9ef9bcc4216701092
+    MIC:           e64f89c7
+    calcMIC:       85ea3435
+2022-11-23 14:40:42 | INFO  | DevAddr: 0x260b0634, FCnt: 1906, FPort: 18, Data: "34808258622e9024f1740611", MIC_ok: false
+2022-11-23 14:44:22 | INFO  | DevAddr: 0x04000c1d, FCnt: 348, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 14:45:37 | INFO  | DevAddr: 0x04000c1d, FCnt: 349, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 14:47:08 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 14:47:15 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2022-11-23 14:47:26 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2022-11-23 14:47:37 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 14:47:48 | INFO  | DevAddr: 0x04000c1d, FCnt: 350, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 14:48:07 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2022-11-23 14:48:29 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/0652c864-00c9-46ce-994f-c48c689f2204", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2022-11-23 14:49:31 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/0652c864-00c9-46ce-994f-c48c689f2204", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2022-11-23 14:49:55 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/0652c864-00c9-46ce-994f-c48c689f2204", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2022-11-23 14:50:10 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aaf98bf32c26b61a 192.168.1.200:54426 40ec42b30580cd240213b08755bcb79737a1
+2022-11-23 14:50:10 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 14:50:10 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x05b342ec
+    FCtrl:         0x80
+    FCnt:          9421
+    FOpts:         
+    FPort:         2
+    FRMPayload:    46013f2638
+    encFRMPayload: 13b08755bc
+    MIC:           b79737a1
+    calcMIC:       8d9abd1c
+2022-11-23 14:50:10 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2022-11-23 14:50:59 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/0652c864-00c9-46ce-994f-c48c689f2204", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2022-11-23 14:51:03 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aaf98bf32c26b61a 192.168.1.200:54389 40ec42b30580cd240213b08755bcb79737a1
+2022-11-23 14:51:03 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 14:51:03 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x05b342ec
+    FCtrl:         0x80
+    FCnt:          9421
+    FOpts:         
+    FPort:         2
+    FRMPayload:    46013f2638
+    encFRMPayload: 13b08755bc
+    MIC:           b79737a1
+    calcMIC:       8d9abd1c
+2022-11-23 14:51:03 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2022-11-23 14:52:51 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/0652c864-00c9-46ce-994f-c48c689f2204", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2022-11-23 14:52:54 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 401d0c0004c05f0164f88c71651fd912
+2022-11-23 14:52:54 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 14:52:54 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          351
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: f88c71
+    MIC:           651fd912
+    calcMIC:       651fd912
+2022-11-23 14:52:54 | INFO  | DevAddr: 0x04000c1d, FCnt: 351, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 14:52:54 | DEBUG | starting new connection: https://webhook.site/
