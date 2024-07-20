@@ -1,0 +1,28 @@
+#
+# service_profiles.yaml
+# indexed by ServiceProfileID - Unique identifier for the set of service parameters
+#
+---
+'GoldService':            # ServiceProfileID - Unique identifier for the set of service parameters
+  ULRate:                 # Token bucket filling rate, including ACKs (packet/h)
+  ULBucketSize:           # Token bucket burst size
+  ULRatePolicy:           # Drop or mark when exceeding ULRate
+  DLRate:                 # Token bucket filling rate, including ACKs (packet/h)
+  DLBucketSize:           # Token bucket burst size
+  DLRatePolicy:           # Drop or mark when exceeding DLRate
+  AddGWMetadata:          # GW metadata (RSSI, SNR, GW geoloc., etc.) are added to the packet sent to AS
+  DevStatusReqFreq:       # Frequency to initiate an End-Device status request (request/day) 
+  ReportDevStatusBattery: # Report End-Device battery level to AS
+  ReportDevStatusMargin:  # Report End-Device margin to AS
+  DRMin:                  # Minimum allowed data rate. Used for ADR.
+  DRMax:                  # Maximum allowed data rate. Used for ADR.
+  ChannelMask:            # Channel mask. sNS does not have to obey (i.e., informative).
+  PRAllowed:              # Passive Roaming allowed
+  HRAllowed:              # Handover Roaming allowed
+  RAAllowed:              # Roaming Activation allowed
+  SendLoc:                # Enable generation of geographic location information
+  LocSolverAuxData:       # Auxiliary data that MAY be needed by the geolocation algorithm when SendLoc=True
+  AddLocMetadata:         # Enable addition of geolocation-specific ULMetadata
+  TargetPER:              # Target Packet Error Rate
+  MinGWDiversity:         # Minimum number of receiving GWs (informative)
+...

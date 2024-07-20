@@ -1,0 +1,721 @@
+2023-06-28 09:55:48 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 022e6302aa555a0000000102
+2023-06-28 09:55:58 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02339f02aa555a0000000102
+2023-06-28 09:56:08 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02c99a02aa555a0000000102
+2023-06-28 09:56:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 07:56:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 09:56:18 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 020db702aa555a0000000102
+2023-06-28 09:56:20 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:45215 6b0a9ad5e0ade3f619a618c275956b59c89102415d8ffc8f83261117fdbecadf5d294de7fb6958c929788e994e59921d92950973fb0246169b73af0f10760915a650e089376c06062793beb616ff97c23882f036d68783486265bd43c55286a81c
+2023-06-28 09:56:20 | DEBUG | DataFrame
+2023-06-28 09:56:20 | INFO  | 
+LoRaWAN_PHY: 6b0a9ad5e0ade3f619a618c275956b59c89102415d8ffc8f83261117fdbecadf5d294de7fb6958c929788e994e59921d92950973fb0246169b73af0f10760915a650e089376c06062793beb616ff97c23882f036d68783486265bd43c55286a81c
+    MHDR:        0x6b
+        MType:       UnconfirmedDataDown
+        RFU:         2
+        Major:       Rfu1
+    MAC_Payload: 0a9ad5e0ade3f619a618c275956b59c89102415d8ffc8f83261117fdbecadf5d294de7fb6958c929788e994e59921d92950973fb0246169b73af0f10760915a650e089376c06062793beb616ff97c23882f036d68783486265bd43c5
+        FHDR:           0a9ad5e0ade3f619a618c275956b59c8910241
+            DevAddr:        0x00000000e0d59a0a 
+            FCtrl:          0xad
+                true:     rfu       
+                RFU:            false
+                ACK:            true
+                FPending  :     false
+                FOptsLen:       13
+            FCnt:           63203
+            FOpts:          19a618c275956b59c89102415d
+        FPort:          143
+        EncrFRMPayload: fc8f83261117fdbecadf5d294de7fb6958c929788e994e59921d92950973fb0246169b73af0f10760915a650e089376c06062793beb616ff97c23882f036d68783486265bd43c5
+        FRMPayload:     9b1d28695c55e3d222324c3876b7034558091ec93c9fd5843b1dc1583bb79691ec557a1773aa3bc07914e993479041d65a02310328dbf80755b28dc7f78a1d365ff1d4adc8df0b
+    MIC:         5286a81c
+    CalcMIC:     dec1b3e5
+Meta_Data:
+    SpFact:   SF8
+    Freq:     867.7
+    RSSI:     -118
+    SNR:      -14.2
+
+2023-06-28 09:56:28 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02a35a02aa555a0000000102
+2023-06-28 09:56:38 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02255d02aa555a0000000102
+2023-06-28 09:56:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 07:56:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 09:56:48 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0258e902aa555a0000000102
+2023-06-28 09:56:59 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 025ed402aa555a0000000102
+2023-06-28 09:57:00 | ERROR | lorawan::MType::from_value() error: invalid MType value: 7
+2023-06-28 09:57:02 | DEBUG | PUSH_DATA_RXPK:JoinRequest received from Gateway: aa555a0000000102 192.168.1.131:45215 0f329cf10f55a7145c121b4ea89b
+2023-06-28 09:57:02 | DEBUG | JoinRequest
+2023-06-28 09:57:09 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 029bb402aa555a0000000102
+2023-06-28 09:57:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 07:57:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 0, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 09:57:19 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 020e8202aa555a0000000102
+2023-06-28 09:57:29 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02744102aa555a0000000102
+2023-06-28 09:57:38 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:45215 86f5513cdcf1aa90ba7cb685629dc53c35894a614b598d6d78318451005700d258c212a5661c779fc5af0edd406d4e44c428055c9b31307e244a8b2c03d0950c0ce933798244b4434f083785b2f836ba911804c32961e30ace1f6091cecc326a7d43049e9a
+2023-06-28 09:57:38 | DEBUG | DataFrame
+2023-06-28 09:57:38 | INFO  | 
+LoRaWAN_PHY: 86f5513cdcf1aa90ba7cb685629dc53c35894a614b598d6d78318451005700d258c212a5661c779fc5af0edd406d4e44c428055c9b31307e244a8b2c03d0950c0ce933798244b4434f083785b2f836ba911804c32961e30ace1f6091cecc326a7d43049e9a
+    MHDR:        0x86
+        MType:       ConfirmedDataUp
+        RFU:         1
+        Major:       Rfu1
+    MAC_Payload: f5513cdcf1aa90ba7cb685629dc53c35894a614b598d6d78318451005700d258c212a5661c779fc5af0edd406d4e44c428055c9b31307e244a8b2c03d0950c0ce933798244b4434f083785b2f836ba911804c32961e30ace1f6091cecc326a7d
+        FHDR:           f5513cdcf1aa90
+            DevAddr:        0x00000000dc3c51f5 
+            FCtrl:          0xf1
+                true:     ADRAckReq 
+                RFU:            true
+                ACK:            true
+                ClassB    :     true
+                FOptsLen:       1
+            FCnt:           37034
+            FOpts:          ba
+        FPort:          124
+        EncrFRMPayload: b685629dc53c35894a614b598d6d78318451005700d258c212a5661c779fc5af0edd406d4e44c428055c9b31307e244a8b2c03d0950c0ce933798244b4434f083785b2f836ba911804c32961e30ace1f6091cecc326a7d
+        FRMPayload:     b9a8878fc4e159f5e859d198c2a13517aa4db3ec7ad9b0bd7d49dc6bb9e84f7f4aa43b3002c9bf5b346ceb2dcdec140bcc044a3779a54ad241fd42ffe894fe3d34b83ef3e4c3531fad40a308b481693055ba3ffe074db5
+    MIC:         43049e9a
+    CalcMIC:     1832917c
+Meta_Data:
+    SpFact:   SF7
+    Freq:     868.3
+    RSSI:     -119
+    SNR:      -11.2
+
+2023-06-28 09:57:39 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02dc8702aa555a0000000102
+2023-06-28 09:57:41 | ERROR | lorawan::MType::from_value() error: invalid MType value: 7
+2023-06-28 09:57:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 07:57:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 0, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 09:57:49 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0241e102aa555a0000000102
+2023-06-28 09:57:59 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02fc6702aa555a0000000102
+2023-06-28 09:58:09 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 023e0102aa555a0000000102
+2023-06-28 09:58:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 07:58:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 09:58:19 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02eadc02aa555a0000000102
+2023-06-28 09:58:29 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 026b9602aa555a0000000102
+2023-06-28 09:58:39 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 028f3802aa555a0000000102
+2023-06-28 09:58:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 07:58:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 09:58:49 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02ecb002aa555a0000000102
+2023-06-28 09:59:00 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 023bfb02aa555a0000000102
+2023-06-28 09:59:10 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0232af02aa555a0000000102
+2023-06-28 09:59:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 07:59:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 09:59:20 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02ec1802aa555a0000000102
+2023-06-28 09:59:30 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02db5c02aa555a0000000102
+2023-06-28 09:59:40 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02021a02aa555a0000000102
+2023-06-28 09:59:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 07:59:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 09:59:50 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02fbfa02aa555a0000000102
+2023-06-28 10:00:00 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02aa3a02aa555a0000000102
+2023-06-28 10:00:10 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02fb2902aa555a0000000102
+2023-06-28 10:00:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:00:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:00:20 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02053c02aa555a0000000102
+2023-06-28 10:00:30 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 027c9402aa555a0000000102
+2023-06-28 10:00:40 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0275d802aa555a0000000102
+2023-06-28 10:00:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:00:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:00:50 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0289f902aa555a0000000102
+2023-06-28 10:01:01 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 025cbb02aa555a0000000102
+2023-06-28 10:01:11 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02a89902aa555a0000000102
+2023-06-28 10:01:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:01:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:01:21 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02b1eb02aa555a0000000102
+2023-06-28 10:01:31 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02f1b302aa555a0000000102
+2023-06-28 10:01:41 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0205ef02aa555a0000000102
+2023-06-28 10:01:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:01:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:01:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02e9a102aa555a0000000102
+2023-06-28 10:02:01 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 023ae502aa555a0000000102
+2023-06-28 10:02:11 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02ca0b02aa555a0000000102
+2023-06-28 10:02:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:02:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:02:21 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02484702aa555a0000000102
+2023-06-28 10:02:31 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0264bd02aa555a0000000102
+2023-06-28 10:02:41 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 021f2302aa555a0000000102
+2023-06-28 10:02:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:02:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:02:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 021c7b02aa555a0000000102
+2023-06-28 10:03:01 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0264c502aa555a0000000102
+2023-06-28 10:03:12 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02147302aa555a0000000102
+2023-06-28 10:03:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:03:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:03:22 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 025e4b02aa555a0000000102
+2023-06-28 10:03:32 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02796302aa555a0000000102
+2023-06-28 10:03:42 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 023b7002aa555a0000000102
+2023-06-28 10:03:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:03:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:03:52 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02119e02aa555a0000000102
+2023-06-28 10:04:02 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0209dc02aa555a0000000102
+2023-06-28 10:04:12 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02aad402aa555a0000000102
+2023-06-28 10:04:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:04:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:04:22 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 021b1002aa555a0000000102
+2023-06-28 10:04:32 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02af3b02aa555a0000000102
+2023-06-28 10:04:42 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0233cd02aa555a0000000102
+2023-06-28 10:04:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:04:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:04:52 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02484702aa555a0000000102
+2023-06-28 10:05:02 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02155c02aa555a0000000102
+2023-06-28 10:05:13 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02bb6f02aa555a0000000102
+2023-06-28 10:05:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:05:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:05:23 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02ba9b02aa555a0000000102
+2023-06-28 10:05:33 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 027df502aa555a0000000102
+2023-06-28 10:05:43 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 020be102aa555a0000000102
+2023-06-28 10:05:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:05:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:05:53 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 027f2302aa555a0000000102
+2023-06-28 10:06:03 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02f82902aa555a0000000102
+2023-06-28 10:06:13 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02f8a402aa555a0000000102
+2023-06-28 10:06:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:06:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:06:23 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02b5ca02aa555a0000000102
+2023-06-28 10:06:33 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 024ee802aa555a0000000102
+2023-06-28 10:06:43 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02983202aa555a0000000102
+2023-06-28 10:06:47 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:06:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:06:53 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02794d02aa555a0000000102
+2023-06-28 10:07:03 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 023d3402aa555a0000000102
+2023-06-28 10:07:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02bc5f02aa555a0000000102
+2023-06-28 10:07:17 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:07:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:07:24 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02facb02aa555a0000000102
+2023-06-28 10:07:34 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 026c0502aa555a0000000102
+2023-06-28 10:07:44 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02ac8602aa555a0000000102
+2023-06-28 10:07:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:07:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:07:54 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02aa1a02aa555a0000000102
+2023-06-28 10:08:04 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0255a202aa555a0000000102
+2023-06-28 10:08:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02be7002aa555a0000000102
+2023-06-28 10:08:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:08:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:08:24 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 023b0402aa555a0000000102
+2023-06-28 10:08:34 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 025cd302aa555a0000000102
+2023-06-28 10:08:44 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02369402aa555a0000000102
+2023-06-28 10:08:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:08:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:08:54 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02e2f002aa555a0000000102
+2023-06-28 10:09:04 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02e49e02aa555a0000000102
+2023-06-28 10:09:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 024f3202aa555a0000000102
+2023-06-28 10:09:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:09:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:09:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02fd8202aa555a0000000102
+2023-06-28 10:09:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 024ea902aa555a0000000102
+2023-06-28 10:09:45 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02087002aa555a0000000102
+2023-06-28 10:09:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:09:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:09:55 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 028a2902aa555a0000000102
+2023-06-28 10:10:05 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02544802aa555a0000000102
+2023-06-28 10:10:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 029a0a02aa555a0000000102
+2023-06-28 10:10:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:10:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:10:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 020e1802aa555a0000000102
+2023-06-28 10:10:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02a84402aa555a0000000102
+2023-06-28 10:10:45 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02ac5b02aa555a0000000102
+2023-06-28 10:10:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:10:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:10:55 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 024cd702aa555a0000000102
+2023-06-28 10:11:05 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 022d9b02aa555a0000000102
+2023-06-28 10:11:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02094202aa555a0000000102
+2023-06-28 10:11:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:11:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:11:26 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02c43302aa555a0000000102
+2023-06-28 10:11:36 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02afcd02aa555a0000000102
+2023-06-28 10:11:46 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02a38402aa555a0000000102
+2023-06-28 10:11:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:11:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:11:56 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02add402aa555a0000000102
+2023-06-28 10:12:06 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02764702aa555a0000000102
+2023-06-28 10:12:16 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02de3202aa555a0000000102
+2023-06-28 10:12:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:12:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:12:26 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 024ac402aa555a0000000102
+2023-06-28 10:12:36 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0230f602aa555a0000000102
+2023-06-28 10:12:46 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02202302aa555a0000000102
+2023-06-28 10:12:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:12:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:12:56 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02fbb202aa555a0000000102
+2023-06-28 10:13:06 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02070402aa555a0000000102
+2023-06-28 10:13:16 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02f4ec02aa555a0000000102
+2023-06-28 10:13:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:13:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:13:27 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0220ba02aa555a0000000102
+2023-06-28 10:13:37 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0286c302aa555a0000000102
+2023-06-28 10:13:47 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 023e0502aa555a0000000102
+2023-06-28 10:13:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:13:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:13:57 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02d96702aa555a0000000102
+2023-06-28 10:14:07 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0233b702aa555a0000000102
+2023-06-28 10:14:17 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02995002aa555a0000000102
+2023-06-28 10:14:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:14:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:14:27 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0214d302aa555a0000000102
+2023-06-28 10:14:37 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02d93402aa555a0000000102
+2023-06-28 10:14:47 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02f75e02aa555a0000000102
+2023-06-28 10:14:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:14:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:14:57 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0210a802aa555a0000000102
+2023-06-28 10:15:07 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02f60502aa555a0000000102
+2023-06-28 10:15:17 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02940102aa555a0000000102
+2023-06-28 10:15:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:15:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:15:28 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02bc4402aa555a0000000102
+2023-06-28 10:15:38 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0278fa02aa555a0000000102
+2023-06-28 10:17:27 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Trace } }
+2023-06-28 10:17:28 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 029bbc02aa555a0000000102
+2023-06-28 10:17:39 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02e9e502aa555a0000000102
+2023-06-28 10:17:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:17:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:17:49 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0208f502aa555a0000000102
+2023-06-28 10:17:59 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02e9e202aa555a0000000102
+2023-06-28 10:18:09 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 025e5302aa555a0000000102
+2023-06-28 10:18:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:18:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:18:19 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02d2b202aa555a0000000102
+2023-06-28 10:18:29 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02d08502aa555a0000000102
+2023-06-28 10:18:39 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02fa5402aa555a0000000102
+2023-06-28 10:18:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:18:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:18:49 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02e8d402aa555a0000000102
+2023-06-28 10:18:59 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02668202aa555a0000000102
+2023-06-28 10:19:09 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02649802aa555a0000000102
+2023-06-28 10:19:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:19:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:19:19 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02877502aa555a0000000102
+2023-06-28 10:19:29 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02657002aa555a0000000102
+2023-06-28 10:19:40 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 025a8a02aa555a0000000102
+2023-06-28 10:19:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:19:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:19:50 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02802902aa555a0000000102
+2023-06-28 10:19:59 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Trace } }
+2023-06-28 10:20:00 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0244de02aa555a0000000102
+2023-06-28 10:20:10 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 027ca502aa555a0000000102
+2023-06-28 10:20:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:20:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:20:20 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02575902aa555a0000000102
+2023-06-28 10:20:30 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02d35102aa555a0000000102
+2023-06-28 10:20:40 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02adac02aa555a0000000102
+2023-06-28 10:20:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:20:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:20:50 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0280ec02aa555a0000000102
+2023-06-28 10:21:00 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0217e402aa555a0000000102
+2023-06-28 10:21:10 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0285f102aa555a0000000102
+2023-06-28 10:21:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:21:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:21:20 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0266f102aa555a0000000102
+2023-06-28 10:21:30 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 027cc002aa555a0000000102
+2023-06-28 10:21:40 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 027cbb02aa555a0000000102
+2023-06-28 10:21:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:21:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:21:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02e46602aa555a0000000102
+2023-06-28 10:22:01 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02da6102aa555a0000000102
+2023-06-28 10:22:11 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 020b6302aa555a0000000102
+2023-06-28 10:22:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:22:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:22:21 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02bc8302aa555a0000000102
+2023-06-28 10:22:31 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02b46902aa555a0000000102
+2023-06-28 10:22:41 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 022f3a02aa555a0000000102
+2023-06-28 10:22:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:22:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:22:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02271602aa555a0000000102
+2023-06-28 10:23:01 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0293ac02aa555a0000000102
+2023-06-28 10:23:11 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02071f02aa555a0000000102
+2023-06-28 10:23:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:23:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:23:21 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02113402aa555a0000000102
+2023-06-28 10:23:31 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 022d8d02aa555a0000000102
+2023-06-28 10:23:54 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Trace } }
+2023-06-28 10:24:02 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0235c102aa555a0000000102
+2023-06-28 10:24:12 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02c7e402aa555a0000000102
+2023-06-28 10:24:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:24:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:24:22 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0267d802aa555a0000000102
+2023-06-28 10:24:32 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02ed9602aa555a0000000102
+2023-06-28 10:24:42 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0212ec02aa555a0000000102
+2023-06-28 10:24:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:24:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:24:52 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0202d802aa555a0000000102
+2023-06-28 10:25:02 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02e50a02aa555a0000000102
+2023-06-28 10:25:12 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02f89d02aa555a0000000102
+2023-06-28 10:25:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:25:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:25:22 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02d1a502aa555a0000000102
+2023-06-28 10:25:32 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0296c102aa555a0000000102
+2023-06-28 10:25:42 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02f41f02aa555a0000000102
+2023-06-28 10:25:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:25:48 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:25:53 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0282ca02aa555a0000000102
+2023-06-28 10:26:03 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 026c4902aa555a0000000102
+2023-06-28 10:26:13 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 02ae9002aa555a0000000102
+2023-06-28 10:26:18 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45215 Stat { time: "2023-06-28 08:26:18 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:26:23 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:40476 0268ba02aa555a0000000102
+2023-06-28 10:26:43 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0267c602aa555a0000000102
+2023-06-28 10:26:46 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 a81efc73af8c060a7c5048ec9440f20914c933cb477a135835d3e3381745ad85694ab88cc394253c6e813106583f5d3de8daa0c7d5e0ff3842732c5daffa9e29f32febba7dfe8fe37ea379ff9c
+2023-06-28 10:26:46 | DEBUG | DataFrame
+2023-06-28 10:26:46 | INFO  | 
+LoRaWAN_PHY: a81efc73af8c060a7c5048ec9440f20914c933cb477a135835d3e3381745ad85694ab88cc394253c6e813106583f5d3de8daa0c7d5e0ff3842732c5daffa9e29f32febba7dfe8fe37ea379ff9c
+    MHDR:        0xa8
+        MType:       ConfirmedDataDown
+        RFU:         2
+        Major:       LoRaWanR1
+    MAC_Payload: 1efc73af8c060a7c5048ec9440f20914c933cb477a135835d3e3381745ad85694ab88cc394253c6e813106583f5d3de8daa0c7d5e0ff3842732c5daffa9e29f32febba7dfe8fe37e
+        FHDR:           1efc73af8c060a7c5048ec9440f20914c933
+            DevAddr:        0x00000000af73fc1e 
+            FCtrl:          0x8c
+                true:     rfu:      
+                RFU:            false
+                ACK:            false
+                FPending: :     false
+                FOptsLen:       12
+            FCnt:           2566
+            FOpts:          7c5048ec9440f20914c933cb
+        FPort:          71
+        EncrFRMPayload: 7a135835d3e3381745ad85694ab88cc394253c6e813106583f5d3de8daa0c7d5e0ff3842732c5daffa9e29f32febba7dfe8fe37e
+        FRMPayload:     2164423864f18a1504c2eea7b74c4a972b14b414b469f3ba2d8200b331dd008ac32890a4eb741ba95d19e0d2312fff650415a43a
+    MIC:         a379ff9c
+    CalcMIC:     ade39912
+Meta_Data:
+    SpFact:   SF7
+    Freq:     868.1
+    RSSI:     -121
+    SNR:      -12.2
+
+2023-06-28 10:26:53 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0251ff02aa555a0000000102
+2023-06-28 10:27:03 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 024aec02aa555a0000000102
+2023-06-28 10:27:08 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000480e90312caf3012124b562f63c5bda5db38bc42dc9757dc8
+2023-06-28 10:27:08 | DEBUG | DataFrame
+2023-06-28 10:27:08 | INFO  | 
+LoRaWAN_PHY: 40200f000480e90312caf3012124b562f63c5bda5db38bc42dc9757dc8
+    MHDR:        0x40
+        MType:       UnconfirmedDataUp
+        RFU:         0
+        Major:       LoRaWanR1
+    MAC_Payload: 200f000480e90312caf3012124b562f63c5bda5db38bc42d
+        FHDR:           200f000480e9
+            DevAddr:        0x0000000004000f20 
+            FCtrl:          0x80
+                true:     ADRAckReq:
+                RFU:            false
+                ACK:            false
+                ClassB:   :     false
+                FOptsLen:       0
+            FCnt:           1001
+            FOpts:          
+        FPort:          18
+        EncrFRMPayload: caf3012124b562f63c5bda5db38bc42d
+        FRMPayload:     e1f4282e08b240bc2f2c5d01c00d35ef
+    MIC:         c9757dc8
+    CalcMIC:     cbb4b810
+Meta_Data:
+    SpFact:   SF9
+    Freq:     867.1
+    RSSI:     -119
+    SNR:      -9.5
+
+2023-06-28 10:27:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:27:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 1, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:27:13 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02f2fb02aa555a0000000102
+2023-06-28 10:27:23 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02e34602aa555a0000000102
+2023-06-28 10:27:33 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 027cc202aa555a0000000102
+2023-06-28 10:27:35 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 a808975b05e88314dc7f7816bfaec15cc1e93763475b2bf6a7a6aee65e8f131709472ef8e95c2fbbfa181e85524ec7dd47d60347609582692978925d8b61cde217f0ff0cc3b3bae368ca383c1b94391fa3c2b5b22d5e05aaac60fb766cc229e8ba6c568d8cb131d8a3b47ffee331e7cb0d97e2d3
+2023-06-28 10:27:35 | DEBUG | DataFrame
+2023-06-28 10:27:35 | INFO  | 
+LoRaWAN_PHY: a808975b05e88314dc7f7816bfaec15cc1e93763475b2bf6a7a6aee65e8f131709472ef8e95c2fbbfa181e85524ec7dd47d60347609582692978925d8b61cde217f0ff0cc3b3bae368ca383c1b94391fa3c2b5b22d5e05aaac60fb766cc229e8ba6c568d8cb131d8a3b47ffee331e7cb0d97e2d3
+    MHDR:        0xa8
+        MType:       ConfirmedDataDown
+        RFU:         2
+        Major:       LoRaWanR1
+    MAC_Payload: 08975b05e88314dc7f7816bfaec15cc1e93763475b2bf6a7a6aee65e8f131709472ef8e95c2fbbfa181e85524ec7dd47d60347609582692978925d8b61cde217f0ff0cc3b3bae368ca383c1b94391fa3c2b5b22d5e05aaac60fb766cc229e8ba6c568d8cb131d8a3b47ffee331e7cb
+        FHDR:           08975b05e88314dc7f7816bfaec1
+            DevAddr:        0x00000000055b9708 
+            FCtrl:          0xe8
+                true:     rfu:      
+                RFU:            true
+                ACK:            true
+                FPending: :     false
+                FOptsLen:       8
+            FCnt:           5251
+            FOpts:          dc7f7816bfaec15c
+        FPort:          193
+        EncrFRMPayload: e93763475b2bf6a7a6aee65e8f131709472ef8e95c2fbbfa181e85524ec7dd47d60347609582692978925d8b61cde217f0ff0cc3b3bae368ca383c1b94391fa3c2b5b22d5e05aaac60fb766cc229e8ba6c568d8cb131d8a3b47ffee331e7cb
+        FRMPayload:     f9f55e6f0683d28e06db0e52cf9f1d6097fd819b247f1dbba4cf5de82ae16e6f54d2e22df4d62bd83dcb467d4f5417ef8f3dc3e2e7b9dddca393d95da2b83f99af5bc00b706ee0a4a9feea5ed4c0392f08e97ca7db2750e3d09e630f561e5d
+    MIC:         0d97e2d3
+    CalcMIC:     f325bbbf
+Meta_Data:
+    SpFact:   SF7
+    Freq:     867.3
+    RSSI:     -119
+    SNR:      -11.2
+
+2023-06-28 10:27:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:27:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:27:43 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 a7ff8270ddb5b45ca483d011488b5eac43b0c524004a3b2c8e2868b51aa2e0eb6ed59295ea061196250ef2ffbafc68c2665f7b72c08e714c8be5f4963aa107035c5206faecac6af8297a57e53d8e9ce7276c538958ddd8beff01ec
+2023-06-28 10:27:43 | DEBUG | DataFrame
+2023-06-28 10:27:43 | INFO  | 
+LoRaWAN_PHY: a7ff8270ddb5b45ca483d011488b5eac43b0c524004a3b2c8e2868b51aa2e0eb6ed59295ea061196250ef2ffbafc68c2665f7b72c08e714c8be5f4963aa107035c5206faecac6af8297a57e53d8e9ce7276c538958ddd8beff01ec
+    MHDR:        0xa7
+        MType:       ConfirmedDataDown
+        RFU:         1
+        Major:       Rfu1
+    MAC_Payload: ff8270ddb5b45ca483d011488b5eac43b0c524004a3b2c8e2868b51aa2e0eb6ed59295ea061196250ef2ffbafc68c2665f7b72c08e714c8be5f4963aa107035c5206faecac6af8297a57e53d8e9ce7276c538958ddd8
+        FHDR:           ff8270ddb5b45ca483d011
+            DevAddr:        0x00000000dd7082ff 
+            FCtrl:          0xb5
+                true:     rfu:      
+                RFU:            false
+                ACK:            true
+                FPending: :     true
+                FOptsLen:       5
+            FCnt:           23732
+            FOpts:          a483d01148
+        FPort:          139
+        EncrFRMPayload: 5eac43b0c524004a3b2c8e2868b51aa2e0eb6ed59295ea061196250ef2ffbafc68c2665f7b72c08e714c8be5f4963aa107035c5206faecac6af8297a57e53d8e9ce7276c538958ddd8
+        FRMPayload:     3f29f7ef03449c8204f2013f7a19d3492f8a3b02a587aea8a83af3ade04c92ddbddca473f5fd8d4deae788f23f4173b431d8f72cecf9e6eb7c99a5717ee5c4f854afd8bfcced8c28c9
+    MIC:         beff01ec
+    CalcMIC:     68d805a3
+Meta_Data:
+    SpFact:   SF7
+    Freq:     868.5
+    RSSI:     -119
+    SNR:      -11.5
+
+2023-06-28 10:27:43 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02765a02aa555a0000000102
+2023-06-28 10:27:48 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Trace } }
+2023-06-28 10:27:52 | DEBUG | PUSH_DATA_RXPK:RejoinRequest received from Gateway: aa555a0000000102 192.168.1.131:41914 d76018dc7dc1e1c9ef65241846501aa6dc3724d19e006f51f94443f967e5a092b43f307a3965591b8963b82b7ce228c24bda6b2d08ca080099829b5ae92d70330ddadf7e3ebe908dd517aa17b277f5203b3987022d769e1994bdf2a68f7c76394bb5ae9d7caff1b4c2b5682eb5ce4747eb3fe29c989d611d30c1bb6b2fb0300ece2c373a4b2bb98f65ce32724ca6ac8e2457d5d79ef3b23a1382cdaccd11a8f36f7aa1ada5a26945f78f8d8efe331b412a36e6d341fd917f529a80a1f4837e41d5aa2133ddca30df1ff1108325bff06a
+2023-06-28 10:27:52 | DEBUG | - RejoinRequest -
+2023-06-28 10:27:53 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02339f02aa555a0000000102
+2023-06-28 10:28:03 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02c99a02aa555a0000000102
+2023-06-28 10:28:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:28:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 0, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:28:13 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 020db702aa555a0000000102
+2023-06-28 10:28:17 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000400ed0312e5b983c7bb66bbc1175eb8a5362e2139ef
+2023-06-28 10:28:17 | DEBUG | DataFrame
+2023-06-28 10:28:19 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 60b006399d30b4993b893e6d4dcc
+2023-06-28 10:28:19 | DEBUG | DataFrame
+2023-06-28 10:28:23 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02255d02aa555a0000000102
+2023-06-28 10:28:33 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02051702aa555a0000000102
+2023-06-28 10:28:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:28:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 1, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:28:43 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 025ed402aa555a0000000102
+2023-06-28 10:28:54 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02abb202aa555a0000000102
+2023-06-28 10:29:04 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02cdc602aa555a0000000102
+2023-06-28 10:29:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:29:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:29:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02541102aa555a0000000102
+2023-06-28 10:29:17 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000480f0031213a494d3942d30648a245eee826b038c77
+2023-06-28 10:29:17 | DEBUG | DataFrame
+2023-06-28 10:29:24 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02744102aa555a0000000102
+2023-06-28 10:29:29 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 6bbbb47197e54d8c3190a1996425255199083949aedd40004847d2c1c07c0e65c747a09aed8d1f576f76d1ba10329b7af4eaa41f22ab57536ae32f598003d0f3f29f071f19acec517f39fb885601a2f82902e595dd016bbf5efc216f510e3f0b24daf2c8f2dd2586717bfac4dadd0b5f5b22c4e924d036274bbf4f9885d843b92ad50aff02ca870026fcd73a2ceeb0df98b15aaed094c8404c9f1e3f5a849c0e638ae21538bb199023e05e94209c48d4866b9daeafe79ffd17eaa97896beaf165ff5f70ffcf559a7f05795b336464f3a3ad6b03113385bb0429c31ba4586e0d4662e2aff2a21c01be4287ce31d16b4da23704519132ded6a0c
+2023-06-28 10:29:29 | DEBUG | DataFrame
+2023-06-28 10:29:29 | ERROR | Invalid Data frame length: 249
+2023-06-28 10:29:34 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02dc8702aa555a0000000102
+2023-06-28 10:29:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:29:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 1, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:29:44 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 023ea102aa555a0000000102
+2023-06-28 10:29:52 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000400f203120929dc9665b8a86c6a0a
+2023-06-28 10:29:52 | DEBUG | DataFrame
+2023-06-28 10:29:54 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02fc6702aa555a0000000102
+2023-06-28 10:29:56 | DEBUG | PUSH_DATA_RXPK:JoinAccept received from Gateway: aa555a0000000102 192.168.1.131:41914 3f857427fa61d3270fff07553071dcb006f52804da85b313e9c3782dc174a2c055e95226bfbd4e667e0f0466dde523682f399d97fd041f26c3ae7a5e5bb02a8984680dccac3bfa51ca4310928aa9e36b04b6f78fb9ce8863115430d814291ddfb79fdd189acfca6bc843a201478460ff9cd2bc0521f7d0cccd2cc506ff2bc44ab50d3562df58f453250cadf973a0f3f3bc3eb572c6b0d7a15c28b3756cd85255f9169f93911d
+2023-06-28 10:29:56 | DEBUG | JoinAccept
+2023-06-28 10:29:57 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000400f303129dab62c96be64481fb24e82dbdb5607edd
+2023-06-28 10:29:57 | DEBUG | DataFrame
+2023-06-28 10:30:04 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02eadc02aa555a0000000102
+2023-06-28 10:30:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:30:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 3, rxok: 2, rxfw: 3, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:30:13 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000400f40312acd204594e7418065b62726843c8a9fe88
+2023-06-28 10:30:13 | DEBUG | DataFrame
+2023-06-28 10:30:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 025c2a02aa555a0000000102
+2023-06-28 10:30:24 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02ecb002aa555a0000000102
+2023-06-28 10:30:33 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000480f50312564320e9d1377fcc6073812e43a6dd4ea2
+2023-06-28 10:30:33 | DEBUG | DataFrame
+2023-06-28 10:30:34 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0232af02aa555a0000000102
+2023-06-28 10:30:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:30:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 2, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:30:44 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02ec1802aa555a0000000102
+2023-06-28 10:30:55 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02db5c02aa555a0000000102
+2023-06-28 10:31:05 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02021a02aa555a0000000102
+2023-06-28 10:31:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:31:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:31:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02fbfa02aa555a0000000102
+2023-06-28 10:31:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02fb2902aa555a0000000102
+2023-06-28 10:31:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:31:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:31:45 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02053c02aa555a0000000102
+2023-06-28 10:31:55 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 027c9402aa555a0000000102
+2023-06-28 10:32:05 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0275d802aa555a0000000102
+2023-06-28 10:32:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:32:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:32:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0289f902aa555a0000000102
+2023-06-28 10:32:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 025cbb02aa555a0000000102
+2023-06-28 10:32:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02a89902aa555a0000000102
+2023-06-28 10:32:41 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000400f803125423f86a0ffa756c1d508d59249a7a8da8
+2023-06-28 10:32:41 | DEBUG | DataFrame
+2023-06-28 10:32:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:32:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 1, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:32:45 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02f1b302aa555a0000000102
+2023-06-28 10:32:56 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0205ef02aa555a0000000102
+2023-06-28 10:33:00 | ERROR | lorawan::MType::from_value() error: invalid MType value: 7
+2023-06-28 10:33:06 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02e9a102aa555a0000000102
+2023-06-28 10:33:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:33:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:33:16 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02ca0b02aa555a0000000102
+2023-06-28 10:33:19 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000400fa0312812cbe66b4492679cdf78eab948dd9b0c2
+2023-06-28 10:33:19 | DEBUG | DataFrame
+2023-06-28 10:33:26 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02484702aa555a0000000102
+2023-06-28 10:33:36 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0264bd02aa555a0000000102
+2023-06-28 10:33:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:33:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 1, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:33:46 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 021ea802aa555a0000000102
+2023-06-28 10:33:56 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 021c7b02aa555a0000000102
+2023-06-28 10:34:06 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0264c502aa555a0000000102
+2023-06-28 10:34:07 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000400fb0312972f39800372b062959dad3eb06d7194cef1eb18
+2023-06-28 10:34:07 | DEBUG | DataFrame
+2023-06-28 10:34:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:34:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 1, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:34:16 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 025e4b02aa555a0000000102
+2023-06-28 10:34:26 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02796302aa555a0000000102
+2023-06-28 10:34:29 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 7969ae0c323277b76f
+2023-06-28 10:34:29 | DEBUG | DataFrame
+2023-06-28 10:34:29 | ERROR | Invalid Data frame length: 9
+2023-06-28 10:34:36 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02642402aa555a0000000102
+2023-06-28 10:34:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:34:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:34:46 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0209dc02aa555a0000000102
+2023-06-28 10:34:47 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000480fd03124ad04cac85706588d4cad654fd8e3db9bf
+2023-06-28 10:34:47 | DEBUG | DataFrame
+2023-06-28 10:34:56 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02acf202aa555a0000000102
+2023-06-28 10:35:07 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 021b1002aa555a0000000102
+2023-06-28 10:35:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:35:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 1, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:35:17 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0233cd02aa555a0000000102
+2023-06-28 10:35:20 | DEBUG | PUSH_DATA_RXPK:JoinRequest received from Gateway: aa555a0000000102 192.168.1.131:41914 030ac4fd
+2023-06-28 10:35:20 | DEBUG | JoinRequest
+2023-06-28 10:35:25 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 556429cc24a906c4b4b997fdb21e7a5489523c3c7328b22aa485068a5bf247b88bf0cc10b204fd4beee539c7f10c0a0d42d0c74aefd067f0b897c1f1bab8dfdf05
+2023-06-28 10:35:25 | DEBUG | DataFrame
+2023-06-28 10:35:27 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02155c02aa555a0000000102
+2023-06-28 10:35:37 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02bb6f02aa555a0000000102
+2023-06-28 10:35:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:35:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 0, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:35:47 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02ba9b02aa555a0000000102
+2023-06-28 10:35:57 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 027df502aa555a0000000102
+2023-06-28 10:36:07 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 020be102aa555a0000000102
+2023-06-28 10:36:11 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f0004000004129854cd34f27c3f59c29d594c88593d6dd6
+2023-06-28 10:36:11 | DEBUG | DataFrame
+2023-06-28 10:36:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:36:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 1, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:36:17 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02f82902aa555a0000000102
+2023-06-28 10:36:27 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02f8a402aa555a0000000102
+2023-06-28 10:36:37 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 021b1302aa555a0000000102
+2023-06-28 10:36:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:36:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:36:47 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 024ee802aa555a0000000102
+2023-06-28 10:36:54 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000400010412da3d4204af3fe6677901a4e170e6d7752ff42874
+2023-06-28 10:36:54 | DEBUG | DataFrame
+2023-06-28 10:36:57 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0238e002aa555a0000000102
+2023-06-28 10:37:08 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02794d02aa555a0000000102
+2023-06-28 10:37:10 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 75140780bd2b066611e3a642e8d9468431a2b810193ed7db8464298785802b7a7ddfb0f2b29c58d1d5e19582ec864ac6cc045f078a10a1a3173de944fb1d15e09461a70b88b727f6b3259477ab4f2a7ef88c4205df7d
+2023-06-28 10:37:10 | DEBUG | DataFrame
+2023-06-28 10:37:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:37:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 1, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:37:18 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 024e7702aa555a0000000102
+2023-06-28 10:37:28 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02facb02aa555a0000000102
+2023-06-28 10:37:32 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 487e18ade1c8aa086fe73bdffd563626e137835de73f2bd9ae893c9db2b15056ff77c3e34af2c52123fa33b958ebb2624cd3769816b4047fc0a6537b303020818a9e53076c25f48ccb5854a60ae9bba5f6bbaa48840fa211ac90d57f71098668f54332c62a703b9cc7e2ef96f292781e78fc7a86d6c009dd0cd438aeb75aaab18959977c0cc096add1a8792545b5fafe9d2f8f1b9714644dffb8a2d71d779b567ceb9189b6e58b5a6568f6477631c10c023c39a2a6cadc494d7e51f54d754f37e21f132eae4a9b6a02df9770c59fb4b3372e9fa359ec08498a58c7c2c0436b3890679f51abd73cb2b8e467a1e45fd09285dddca35e
+2023-06-28 10:37:32 | DEBUG | DataFrame
+2023-06-28 10:37:32 | ERROR | Invalid Data frame length: 245
+2023-06-28 10:37:33 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000480030412f93e8ef139e7b79ab90c7c74257ad4901e
+2023-06-28 10:37:33 | DEBUG | DataFrame
+2023-06-28 10:37:38 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02212b02aa555a0000000102
+2023-06-28 10:37:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:37:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 1, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:37:48 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0255a202aa555a0000000102
+2023-06-28 10:37:58 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02be7002aa555a0000000102
+2023-06-28 10:38:00 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000400040412c5b17e0a707d3f770d3a
+2023-06-28 10:38:00 | DEBUG | DataFrame
+2023-06-28 10:38:08 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 023b0402aa555a0000000102
+2023-06-28 10:38:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:38:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 1, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:38:18 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02369402aa555a0000000102
+2023-06-28 10:38:28 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02b3af02aa555a0000000102
+2023-06-28 10:38:38 | DEBUG | PUSH_DATA_RXPK:RejoinRequest received from Gateway: aa555a0000000102 192.168.1.131:41914 de2472f0cbde64016be5c24e3e
+2023-06-28 10:38:38 | DEBUG | - RejoinRequest -
+2023-06-28 10:38:38 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02e49e02aa555a0000000102
+2023-06-28 10:38:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:38:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:38:48 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02154902aa555a0000000102
+2023-06-28 10:38:54 | ERROR | lorawan::MType::from_value() error: invalid MType value: 7
+2023-06-28 10:38:58 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 024ea902aa555a0000000102
+2023-06-28 10:39:09 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02087002aa555a0000000102
+2023-06-28 10:39:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:39:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:39:19 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 028a2902aa555a0000000102
+2023-06-28 10:39:20 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000480080412b2ad6f314504cd45f29ed005f1e9796aac
+2023-06-28 10:39:20 | DEBUG | DataFrame
+2023-06-28 10:39:29 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 029a0a02aa555a0000000102
+2023-06-28 10:39:39 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02bcd502aa555a0000000102
+2023-06-28 10:39:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:39:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 1, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:39:49 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02a84402aa555a0000000102
+2023-06-28 10:39:59 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02ac5b02aa555a0000000102
+2023-06-28 10:40:07 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 7e18ac7f834b56c7d971a8f62d7fc84e80b99ef84582eb30e597b017b61d388d1eec4bd4272d80f779348dc11421d057ec402cf0d391a0d3c77260e51ab51141ad4756aef4724601ecf62ca13af90957c4f9a803324744aaad89effa43f0ea796d6774943420817f05c1f1a5192deb6fcb9ce280ab418c1260a802ea9b44a7138c2d4a9cbd28d8135185f82eaf49657335d48698c2686b70
+2023-06-28 10:40:07 | DEBUG | DataFrame
+2023-06-28 10:40:09 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 024cd702aa555a0000000102
+2023-06-28 10:40:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:40:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:40:19 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02094202aa555a0000000102
+2023-06-28 10:40:29 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02e50602aa555a0000000102
+2023-06-28 10:40:34 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 bc7d1045c346d65b90266b0ea84ce9c3a2299e8b41f2e4e24198a8e158179820876a1c8f32cb8c24c4d0577f05a05369b6f49fce842421f09539e0f16fe8a8ccfba5ad3946ae66f9097e432a588547d0ecc24aec3da4e81b1a9ebd9a85d55c3c08cbfea25f
+2023-06-28 10:40:34 | DEBUG | DataFrame
+2023-06-28 10:40:39 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02afcd02aa555a0000000102
+2023-06-28 10:40:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:40:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:40:49 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 027f2d02aa555a0000000102
+2023-06-28 10:40:59 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02add402aa555a0000000102
+2023-06-28 10:41:10 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02764702aa555a0000000102
+2023-06-28 10:41:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:41:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:41:20 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 021cec02aa555a0000000102
+2023-06-28 10:41:40 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0230f602aa555a0000000102
+2023-06-28 10:41:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:41:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:41:50 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02856c02aa555a0000000102
+2023-06-28 10:42:00 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02fbb202aa555a0000000102
+2023-06-28 10:42:10 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02070402aa555a0000000102
+2023-06-28 10:42:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:42:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:42:20 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 020bb902aa555a0000000102
+2023-06-28 10:42:30 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0220ba02aa555a0000000102
+2023-06-28 10:42:40 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0286c302aa555a0000000102
+2023-06-28 10:42:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:42:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:42:46 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f00040009041245657928cb922e40ab6f
+2023-06-28 10:42:46 | DEBUG | DataFrame
+2023-06-28 10:42:50 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02d96702aa555a0000000102
+2023-06-28 10:42:55 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 576e77b8a0c6e4cc60b0ed87204ec1e6ab2d5162c92eb1c5584415b0292023261e4c1d79de8befd4eaf8042f30948c75d6240c22660ea39556b5e054b4e13b0be67106bd7b3ccd7db3e99c915fb11d65214aa0fc7c2d2c1c8d3a02efa2cd81689567a7c5231d4a5bb20bb788c66dcaaf3c60cdc0e0e8c83081b917be
+2023-06-28 10:42:55 | DEBUG | DataFrame
+2023-06-28 10:43:00 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02995002aa555a0000000102
+2023-06-28 10:43:11 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02a3e302aa555a0000000102
+2023-06-28 10:43:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:43:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 1, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:43:21 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02d93402aa555a0000000102
+2023-06-28 10:43:24 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f0004800a0412fc2e799184c7fbd81bbeaf1a2eb9ffd926b03ace
+2023-06-28 10:43:24 | DEBUG | DataFrame
+2023-06-28 10:43:31 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02a0f202aa555a0000000102
+2023-06-28 10:43:35 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 9b588026fb001f6e060af6f4a00d516ef6cddca5089c45324961b28f9b4bec50c5befa2d859d2ed17e34919aaa851d616785644a1def5ae4fb9694a4b850e6381d6bd37868acf8fbc4d40e16105e07b5
+2023-06-28 10:43:35 | DEBUG | DataFrame
+2023-06-28 10:43:41 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02f60502aa555a0000000102
+2023-06-28 10:43:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:43:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 1, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:43:45 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 b77583a0cc9da4b44a00367b4be9ea1e59c406e6b8e2489309c9399761411ace505f911735dfabf5789c306e53806277ca121c686469eb1812803979328f7ac6147e20e13053db92fd7c750ea5fd0b7e79d2bcc19947995ac856ec7f7b1784a314317721adc2e6aa2895ee38f78c7df573f26dc44f225e9c7f19725a698f88d1e61f97aecd82651b058f5b0882a76d4d1c686e0543bd7444a409056aef37ebdb15b7267974e825120ab920260cb24e1200c9bae3f687744bed01eab837be8cfc0def2c9ac7bacf8fe7fabfb1d68baa957e10f46a469abab2
+2023-06-28 10:43:45 | DEBUG | DataFrame
+2023-06-28 10:43:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02bc4402aa555a0000000102
+2023-06-28 10:43:56 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 9368ddf953c1eda900ae9a70a6df47d6626cc84912b5062a08b37599938e1e17407a8cedd0ea4b34a40b3ae2045bd263c6fdbf95aa997db762e495e39d12878eab3f6f288e8e15e20ecd538fc63f4cd1dea912567e3e455a010cc4cc057b84e7e3b502f4375d3a15b9c5df032b092dcb5f4a5ce3a2d5f88e4ac3101db89f1241e27b142058d46d71475186b0df10a9ed34f97648a9fb311bd9c9cf2787232829048ba564626c286c3e65843ec2f68e1906e9cdad43df
+2023-06-28 10:43:56 | DEBUG | DataFrame
+2023-06-28 10:44:01 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02496902aa555a0000000102
+2023-06-28 10:44:11 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02e62302aa555a0000000102
+2023-06-28 10:44:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:44:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 0, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:44:21 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02da6902aa555a0000000102
+2023-06-28 10:44:31 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 026a7e02aa555a0000000102
+2023-06-28 10:44:41 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 024c7e02aa555a0000000102
+2023-06-28 10:44:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:44:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:44:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02b34802aa555a0000000102
+2023-06-28 10:44:58 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 45dd3909965d5d2d6d824fc2c681f8dd07c239d6999010f2774bb7e6762197815f477356032a278717261ff36fe17238c0f50c2e07b8d43931923044334a08358776b550f49cbc8dbdceffdc915edb2187e16daae3f185b558fd22c3513e9d375b51a12484319c8b90a1efc887bb17e514030ab9dcba8fb66c7c81a26f5f0142906cac44bacb29605cacba067d4825f0ff3c5116c7d69fbe211a671cfc9089866fccf9
+2023-06-28 10:44:58 | DEBUG | DataFrame
+2023-06-28 10:44:59 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 58b012726acd7de8e4ab205bda3dd85a00b5bbd7b561399780849229a5dd183bfdad9f3bac5ac1f67a96ebe840ec49f094ab12db142d17a479c90642703503e75a2849da3e3c8b8a04130e9f60ef15baebda3bc5ebd822ccf9c9b83c140533cd3da46effec1b0d3b1577152ecc06cc43a498085dbd103709c5c1eaada5b22f6b4d3a4f5cde9083ef41544ba0506481c4c727feac8fbcd2d4f30354a762863e804a5a352820f80c6d7a654380115d297d3d40fff91728b5c6cb9d439b37ef344ea9e72f8f
+2023-06-28 10:44:59 | DEBUG | DataFrame
+2023-06-28 10:45:01 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02fb3102aa555a0000000102
+2023-06-28 10:45:12 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02999002aa555a0000000102
+2023-06-28 10:45:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:45:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 0, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:45:22 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0244ee02aa555a0000000102
+2023-06-28 10:45:32 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 029bbc02aa555a0000000102
+2023-06-28 10:45:42 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02e9e502aa555a0000000102
+2023-06-28 10:45:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:45:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:45:44 | DEBUG | PUSH_DATA_RXPK:RejoinRequest received from Gateway: aa555a0000000102 192.168.1.131:41914 df262626ef333a7d69c3b56e46f100ac7548e99797d4b7c54e4a50503277322f90c2561d076c381e0350399fa810ada8cad81690e430a915d91feaa2b2ba52ca4c6e006f2845079b6f6732d5dcd49ea61c16426ac57944a27cd000d760face7fe8e95c064ef90bf214e20c8302b1d389cc86cc19148044d69976b6965bfd9aa64b659e472ff96f1ee0e2064c897ad15e305422a9a79ac7f72e84066aa86655d3f06b7c9d45ea7557131a04676321c1d4c36d561c4efd3afab85d2cc5ee3eafe8d775ef56fd20fcb9c792f073afa5fb9872a7397e9a4b090b7bcd4b352c438bab08a4e0d040d362e5b92a048f4c404c90db
+2023-06-28 10:45:44 | DEBUG | - RejoinRequest -
+2023-06-28 10:45:52 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02e9e202aa555a0000000102
+2023-06-28 10:46:02 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 025e5302aa555a0000000102
+2023-06-28 10:46:12 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0260aa02aa555a0000000102
+2023-06-28 10:46:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:46:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:46:22 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02d08502aa555a0000000102
+2023-06-28 10:46:26 | DEBUG | PUSH_DATA_RXPK:RejoinRequest received from Gateway: aa555a0000000102 192.168.1.131:41914 cab2f34686eaa2479ce6d225fcf660f1ea20887e2c2b7831d31b611f1ced8e89ad82fdf9ef35d314444f7e481164b7ec57d935442729c267c3b26d415d810cc7f4d721bbd9d97fd3c91643596a8f10f3ae570c7de5f85fe1b3ad3a56acaac6273bbb06400838f56d7bc36fdf6907653e80744c059d4d70ea53d1cc3688620eaa9936bf737dab0a6a00e2bf083f34e361c40d335654eabc21c4a4da9a9447014dcd5e2e8aef3f718d55a3479fd842d9b78a14cf21d6d74586aedb48185aad9171c61e3d56f8
+2023-06-28 10:46:26 | DEBUG | - RejoinRequest -
+2023-06-28 10:46:32 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02d83502aa555a0000000102
+2023-06-28 10:46:42 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02e8d402aa555a0000000102
+2023-06-28 10:46:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:46:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:46:52 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02649802aa555a0000000102
+2023-06-28 10:47:02 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02d9a802aa555a0000000102
+2023-06-28 10:47:13 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02877502aa555a0000000102
+2023-06-28 10:47:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:47:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:47:23 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 025a8a02aa555a0000000102
+2023-06-28 10:47:31 | ERROR | lorawan::MType::from_value() error: invalid MType value: 7
+2023-06-28 10:47:33 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02802902aa555a0000000102
+2023-06-28 10:47:43 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0244de02aa555a0000000102
+2023-06-28 10:47:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:47:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:47:53 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02894e02aa555a0000000102
+2023-06-28 10:48:03 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02575902aa555a0000000102
+2023-06-28 10:48:06 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 80700256e2e9f2acee9a008eada78724d06d11704b304781815147c23e014ca2911fa98bd27ca23109eb6326542b58a3464318774307286b44c1331a03eaf80d8a342ecd491228aea89637c1d565f0e0e5182419217ebd26ff83a5458f162b766454f0106925e024697e0fa8ad45ff0a2fba1de6b3354d309a888250cfec12b4b2614f149313b0c3897f7210438a0e495eda1d31871ec28f415d1fb74ada0be1ec801a2edd7a78bc900672714803f0578b0ab15051e86048c5c3c343252387fb1791846e5d2b48e0c0ce40c3ed5cb42f4e9618718c53749b51ed49af65b0e287182ed600828efc8e6d51
+2023-06-28 10:48:06 | DEBUG | DataFrame
+2023-06-28 10:48:06 | ERROR | Invalid Data frame length: 234
+2023-06-28 10:48:09 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f00048010041281cfd3f3cd96e7c64713918aceb7f82d5c
+2023-06-28 10:48:09 | DEBUG | DataFrame
+2023-06-28 10:48:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:48:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 1, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:48:13 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0280ec02aa555a0000000102
+2023-06-28 10:48:23 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 6d85fc186b77ec65499633203524dc72276a97dd5f8a99cb1dfc3ae4fc47836b1b2e9b7b428a3e9191
+2023-06-28 10:48:23 | DEBUG | DataFrame
+2023-06-28 10:48:23 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0285f102aa555a0000000102
+2023-06-28 10:48:33 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 028c0c02aa555a0000000102
+2023-06-28 10:48:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:48:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:48:43 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 027cc002aa555a0000000102
+2023-06-28 10:48:53 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 027cbb02aa555a0000000102
+2023-06-28 10:49:03 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0222fc02aa555a0000000102
+2023-06-28 10:49:08 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 74db2f75814eef4550a18cb1c26ee133d2fbc05869ef7d1e95b65ce2c11c1a557cb52edf456eb0e2caee8cbfc27cd5aa3b732483478143d8109488cd527461407bf490fe3f2442b187e0e1341a221ff0f35f3d7feec71b3cc3561cf1659928f39249b2f6d115ac7ad9c5
+2023-06-28 10:49:08 | DEBUG | DataFrame
+2023-06-28 10:49:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:49:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:49:13 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 020b6302aa555a0000000102
+2023-06-28 10:49:24 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02af6202aa555a0000000102
+2023-06-28 10:49:34 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02bc8302aa555a0000000102
+2023-06-28 10:49:35 | DEBUG | PUSH_DATA_RXPK:ConfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:41914 ae2614f13785b3780895881b878381a0e8f3f3d6c9876eb8b51937e49b988140020ef4ca943a145b40cbb6a95ca6b1b8ccf45c760f357956cb79703836ff01ee673f8c8b56c6deb2718926450803e2d3778abfc2615d880e8f9f761767b4b2dee089af1df4173ce5a3003ed2f3e10c6238babbec8e5d30c8d43e247b22f1ec311329c8d6272d9cbba29a0fe7bf91f75a28de91a5be8be6bb00bbfef472ef20fbd92caa5e44b1375a95d1debad98b935832a62022de2c260af54f29ffb2bba21d62ae
+2023-06-28 10:49:35 | DEBUG | DataFrame
+2023-06-28 10:49:36 | DEBUG | PUSH_DATA_RXPK:RejoinRequest received from Gateway: aa555a0000000102 192.168.1.131:41914 d5f8b8241b0ac90d0907009bf510feadc8ae11d318fff61240764d65ecff699c2d1328674f521d222aa7477359a8a686203e470033a24f70361dcf9ca659f5bc8e956c105fe5e154eae9d856f422529519be93e7b3cd80bad9e44eb7c09aa131983cebac0cdc147c95feab65c67d13f9989aac774cc0943db3a7fe85e9375bf0872edaffbd1bcce4bdf7e1487bb7ed50a89b3990a9b4375375190490e5fe893e9f20076bcb81ab7b22ada7ad8d70a1c14edbe3f6aa69032ef9c5dd1ef85ad69970a6d9
+2023-06-28 10:49:36 | DEBUG | - RejoinRequest -
+2023-06-28 10:49:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:49:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 0, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:49:44 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02271602aa555a0000000102
+2023-06-28 10:49:54 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0293ac02aa555a0000000102
+2023-06-28 10:50:04 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02071f02aa555a0000000102
+2023-06-28 10:50:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:50:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:50:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02113402aa555a0000000102
+2023-06-28 10:50:24 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 022d8d02aa555a0000000102
+2023-06-28 10:50:31 | DEBUG | PUSH_DATA_RXPK:RejoinRequest received from Gateway: aa555a0000000102 192.168.1.131:41914 c540dd589d75a5bd8018ade43af65c6b67630b6119f78d75c41b741cfe5216bbfad69f281b933a3b35bdec867e1a7deb668a33e8a0a9ddb0bf9907dad2a16c3acdad50578fb0284d618568607a15c4d4e1dd2d53aba14112dc1b65b8a7aa3c719d70f1247814f87bb8af18e5662de385e893b82179a2ef12047617647e8b9a7a3e24850240bcbdbdbcbf9dea72d79610e2af0ce996643900e9fd1ee7050d9ed1ef
+2023-06-28 10:50:31 | DEBUG | - RejoinRequest -
+2023-06-28 10:50:34 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0289d402aa555a0000000102
+2023-06-28 10:50:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:50:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:50:44 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0235c102aa555a0000000102
+2023-06-28 10:50:54 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02c7e402aa555a0000000102
+2023-06-28 10:51:04 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02248302aa555a0000000102
+2023-06-28 10:51:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:51:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:51:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02ed9602aa555a0000000102
+2023-06-28 10:51:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0212ec02aa555a0000000102
+2023-06-28 10:51:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02453902aa555a0000000102
+2023-06-28 10:51:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:51:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:51:45 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02e50a02aa555a0000000102
+2023-06-28 10:51:55 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02f89d02aa555a0000000102
+2023-06-28 10:51:57 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 40200f000400110412c41fa4e4f6dd164080db
+2023-06-28 10:51:57 | DEBUG | DataFrame
+2023-06-28 10:52:05 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02d1a502aa555a0000000102
+2023-06-28 10:52:13 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:52:13 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 1, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-28 10:52:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02f41f02aa555a0000000102
+2023-06-28 10:52:17 | DEBUG | PUSH_DATA_RXPK:JoinAccept received from Gateway: aa555a0000000102 192.168.1.131:41914 2607c76577c9c99138aa93ad5fdafcdf8f44026cbd95f84154ab576c8ae1551ac71ec438b404014d28b81102dc80e1e1d476819f62df9448964f708e3f6d8b9c616ff98d3b787309f1bfbdf2d32600272201e2f01021857c49753c71679a7a1fe3acab686e89c9797841e08e8178cff1a70a45999ad5058ad42a02c7fac7cc8727109b76fd1be4e56e8cef63202d67796cf52099a4ff
+2023-06-28 10:52:17 | DEBUG | JoinAccept
+2023-06-28 10:52:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 0282ca02aa555a0000000102
+2023-06-28 10:52:33 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:41914 4f471fecd790a7f3e85fdb0da956bb088ecccf1afac0b814932c782844d876c824d8e8d57a5997ad337d6a217fdba12d0bc655deb9f8cf1c61cd46dbb1491182984a96b467651c8a2e69dbc0fd03d6f701015ee6b07d8990a0fb169c1838378bbeb0eb5ef897f4a64a10dbac647f56217235e99695f6baef1b9e649517393a797cfc8254e26284a5d2a95b0b1dca761d1400b2d59c97bb6db20d5ea03b937e81f624d9fe
+2023-06-28 10:52:33 | DEBUG | DataFrame
+2023-06-28 10:52:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:56368 02ae9002aa555a0000000102
+2023-06-28 10:52:43 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:41914 Stat { time: "2023-06-28 08:52:43 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 0, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }

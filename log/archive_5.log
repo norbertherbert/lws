@@ -1,0 +1,1256 @@
+2022-11-23 15:20:44 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/0652c864-00c9-46ce-994f-c48c689f2204", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2022-11-23 15:20:48 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 4034060b268176070212e344c5bb49b4bfd3e2ea8dbe06750b5f
+2022-11-23 15:20:48 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 15:20:48 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x260b0634
+    FCtrl:         0x81
+    FCnt:          1910
+    FOpts:         02
+    FPort:         18
+    FRMPayload:    6b8517bcfb90196494636119
+    encFRMPayload: e344c5bb49b4bfd3e2ea8dbe
+    MIC:           06750b5f
+    calcMIC:       702dc02f
+2022-11-23 15:20:48 | INFO  | DevAddr: 0x260b0634, FCnt: 1910, FPort: 18, Data: "6b8517bcfb90196494636119", MIC_ok: false
+2022-11-23 15:20:55 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 401d0c0004c060016459d452e6a9c7cb
+2022-11-23 15:20:55 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 15:20:55 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          352
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: 59d452
+    MIC:           e6a9c7cb
+    calcMIC:       e6a9c7cb
+2022-11-23 15:20:55 | INFO  | DevAddr: 0x04000c1d, FCnt: 352, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 15:20:55 | DEBUG | starting new connection: https://webhook.site/
+2022-11-23 15:21:00 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 401d0c0004c06101645879097d765ab5
+2022-11-23 15:21:00 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 15:21:00 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          353
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: 587909
+    MIC:           7d765ab5
+    calcMIC:       7d765ab5
+2022-11-23 15:21:00 | INFO  | DevAddr: 0x04000c1d, FCnt: 353, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 15:21:00 | DEBUG | starting new connection: https://webhook.site/
+2022-11-23 15:21:05 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 401d0c0004c0620164993a7f29ad69e6
+2022-11-23 15:21:05 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 15:21:05 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          354
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: 993a7f
+    MIC:           29ad69e6
+    calcMIC:       29ad69e6
+2022-11-23 15:21:05 | INFO  | DevAddr: 0x04000c1d, FCnt: 354, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 15:21:05 | DEBUG | starting new connection: https://webhook.site/
+2022-11-23 15:21:11 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.108:55678 401d0c0004c063016447be05540cf9c5
+2022-11-23 15:21:11 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2022-11-23 15:21:11 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          355
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: 47be05
+    MIC:           540cf9c5
+    calcMIC:       540cf9c5
+2022-11-23 15:21:11 | INFO  | DevAddr: 0x04000c1d, FCnt: 355, FPort: 100, Data: "aabbcc", MIC_ok: true
+2022-11-23 15:21:11 | DEBUG | starting new connection: https://webhook.site/
+2022-11-23 15:34:32 | INFO  | DevAddr: 0x04000c1d, FCnt: 356, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 16:30:19 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 16:30:34 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:02:44 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:04:05 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:04:07 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:06:22 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:06:39 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:44:19 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:46:55 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:48:57 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:49:43 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 17:50:27 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 17:51:39 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:55:09 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 17:55:34 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 17:56:44 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 17:57:39 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 17:58:04 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 17:59:08 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-24 17:59:33 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 127.0.0.1:8082 401d0c0004c0b800643bcebf7601fb45
+2023-05-24 17:59:33 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-05-24 17:59:33 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          184
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: 3bcebf
+    MIC:           7601fb45
+    calcMIC:       7601fb45
+2023-05-24 17:59:33 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 17:59:33 | DEBUG | starting new connection: https://webhook.site/
+2023-05-24 18:00:25 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-24 18:00:35 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aaf98bf32c26b61a 127.0.0.1:8082 40ec42b30580cd240213b08755bcb79737a1
+2023-05-24 18:00:35 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-05-24 18:00:35 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x05b342ec
+    FCtrl:         0x80
+    FCnt:          9421
+    FOpts:         
+    FPort:         2
+    FRMPayload:    46013f2638
+    encFRMPayload: 13b08755bc
+    MIC:           b79737a1
+    calcMIC:       8d9abd1c
+2023-05-24 18:00:35 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 18:01:12 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aaf98bf32c26b61a 127.0.0.1:8082 40ec42b30580cd240213b08755bcb79737a1
+2023-05-24 18:01:12 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-05-24 18:01:12 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x05b342ec
+    FCtrl:         0x80
+    FCnt:          9421
+    FOpts:         
+    FPort:         2
+    FRMPayload:    46013f2638
+    encFRMPayload: 13b08755bc
+    MIC:           b79737a1
+    calcMIC:       8d9abd1c
+2023-05-24 18:01:12 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 18:01:31 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 127.0.0.1:8082 401d0c0004c0b800643bcebf7601fb45
+2023-05-24 18:01:31 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-05-24 18:01:31 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          184
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: 3bcebf
+    MIC:           7601fb45
+    calcMIC:       7601fb45
+2023-05-24 18:01:31 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 18:01:31 | DEBUG | starting new connection: https://webhook.site/
+2023-05-24 18:05:30 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.200:54303 401d0c0004c0b800643bcebf7601fb45
+2023-05-24 18:05:30 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-05-24 18:05:30 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          184
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: 3bcebf
+    MIC:           7601fb45
+    calcMIC:       7601fb45
+2023-05-24 18:05:30 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 18:05:30 | DEBUG | starting new connection: https://webhook.site/
+2023-05-24 18:05:49 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: 647fdafffe005e17 192.168.1.200:54357 401d0c0004c0b800643bcebf7601fb45
+2023-05-24 18:05:49 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-05-24 18:05:49 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x04000c1d
+    FCtrl:         0xc0
+    FCnt:          184
+    FOpts:         
+    FPort:         100
+    FRMPayload:    aabbcc
+    encFRMPayload: 3bcebf
+    MIC:           7601fb45
+    calcMIC:       7601fb45
+2023-05-24 18:05:49 | INFO  | DevAddr: 0x04000c1d, FCnt: 184, FPort: 100, Data: "aabbcc", MIC_ok: true
+2023-05-24 18:05:49 | DEBUG | starting new connection: https://webhook.site/
+2023-05-24 18:05:59 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aaf98bf32c26b61a 192.168.1.200:54287 40ec42b30580cd240213b08755bcb79737a1
+2023-05-24 18:05:59 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-05-24 18:05:59 | DEBUG | phy_data_comps: 
+    MHDR:          0x40
+    DevAddr:       0x05b342ec
+    FCtrl:         0x80
+    FCnt:          9421
+    FOpts:         
+    FPort:         2
+    FRMPayload:    46013f2638
+    encFRMPayload: 13b08755bc
+    MIC:           b79737a1
+    calcMIC:       8d9abd1c
+2023-05-24 18:05:59 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-05-24 18:06:41 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-24 18:25:41 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-24 18:27:58 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-26 07:26:24 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-26 08:06:46 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-26 08:10:15 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-26 08:10:45 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-26 09:50:58 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-26 11:13:10 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-26 18:13:31 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-26 19:31:37 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-26 22:41:33 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-26 22:50:41 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-05-29 19:56:47 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-01 15:01:21 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-01 15:43:20 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-01 16:37:07 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 10:20:55 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 14:29:14 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 14:29:38 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 14:33:45 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 14:41:45 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 14:48:28 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 14:55:25 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 14:55:51 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 14:58:00 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 15:09:12 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 17:32:49 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 17:34:12 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 17:37:23 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aaf98bf32c26b61a 127.0.0.1:8082 40ec42b30580cd240213b08755bcb79737a1
+2023-06-02 17:37:23 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-02 17:37:23 | DEBUG | phy_data_comps: 
+    MHDR:              Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+    DevAddr:       0x05b342ec
+    FCtrl:             Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+    FCnt:          9421
+    FOpts:         
+    FPort:         2
+    FRMPayload:    46013f2638
+    encFRMPayload: 13b08755bc
+    MIC:           b79737a1
+    calcMIC:       8d9abd1c
+2023-06-02 17:37:23 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-06-02 23:24:59 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 23:25:07 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aaf98bf32c26b61a 127.0.0.1:8082 40ec42b30580cd240213b08755bcb79737a1
+2023-06-02 23:25:07 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-02 23:25:07 | DEBUG | phy_data_comps: MHDR:
+        Value: 0x40
+        MType: UnconfirmedDataUp
+        RFU:   0
+        Major: LoRaWanR1
+DevAddr:       0x05b342ec
+FCtrl:
+        Value:     0x80
+        ADR:       true
+        AdrAckReq: false
+        ACK:       false
+        ClassB:    false
+        FOptsLen:  0
+FCnt:          9421
+FOpts:         
+FPort:         2
+FRMPayload:    46013f2638
+encFRMPayload: 13b08755bc
+MIC:           b79737a1
+calcMIC:       8d9abd1c
+
+2023-06-02 23:25:07 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-06-02 23:26:32 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 23:26:36 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aaf98bf32c26b61a 127.0.0.1:8082 40ec42b30580cd240213b08755bcb79737a1
+2023-06-02 23:26:36 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-02 23:26:36 | DEBUG | phy_data_comps: 
+MHDR:
+        Value: 0x40
+        MType: UnconfirmedDataUp
+        RFU:   0
+        Major: LoRaWanR1
+DevAddr:       0x05b342ec
+FCtrl:
+        Value:     0x80
+        ADR:       true
+        AdrAckReq: false
+        ACK:       false
+        ClassB:    false
+        FOptsLen:  0
+FCnt:          9421
+FOpts:         
+FPort:         2
+FRMPayload:    46013f2638
+encFRMPayload: 13b08755bc
+MIC:           b79737a1
+calcMIC:       8d9abd1c
+
+2023-06-02 23:26:36 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-06-02 23:27:20 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-02 23:27:25 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aaf98bf32c26b61a 127.0.0.1:8082 40ec42b30580cd240213b08755bcb79737a1
+2023-06-02 23:27:25 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-02 23:27:25 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x05b342ec
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          9421
+FOpts:         
+FPort:         2
+FRMPayload:    46013f2638
+encFRMPayload: 13b08755bc
+MIC:           b79737a1
+calcMIC:       8d9abd1c
+
+2023-06-02 23:27:25 | INFO  | DevAddr: 0x05b342ec, FCnt: 9421, FPort: 2, Data: "46013f2638", MIC_ok: false
+2023-06-04 09:28:38 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-06 18:45:05 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-06 20:10:21 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-06 20:16:46 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-06 20:17:21 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-06 20:19:14 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-06 20:33:56 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-07 17:35:17 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-26 08:46:56 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-26 08:47:57 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-26 09:06:20 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aaf98bf32c26b61a 192.168.1.131:60638 40ec42b30580cd240213b08755bcb79737a1
+2023-06-26 09:06:20 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:08:13 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-26 09:13:50 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:46673 40200f0004803f0312bbc4bb076ca41636dc1df12d81e2c27d
+2023-06-26 09:13:50 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:24:21 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-26 09:24:44 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f00048041031250c7a87065d30cc96514ee216cae96fa
+2023-06-26 09:24:44 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:24:44 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          833
+FOpts:         
+FPort:         18
+FRMPayload:    f0daef20f1e9dbc16df0d789
+encFRMPayload: 50c7a87065d30cc96514ee21
+MIC:           6cae96fa
+calcMIC:       af97206c
+
+2023-06-26 09:24:44 | INFO  | DevAddr: 0x04000f20, FCnt: 833, FPort: 18, Data: "f0daef20f1e9dbc16df0d789", MIC_ok: false
+2023-06-26 09:24:59 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:25:24 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f000400420312327baf04bdaf3dc65025
+2023-06-26 09:25:24 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:25:24 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          834
+FOpts:         
+FPort:         18
+FRMPayload:    30453390bdff
+encFRMPayload: 327baf04bdaf
+MIC:           3dc65025
+calcMIC:       8adda17f
+
+2023-06-26 09:25:24 | INFO  | DevAddr: 0x04000f20, FCnt: 834, FPort: 18, Data: "30453390bdff", MIC_ok: false
+2023-06-26 09:25:29 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:25:59 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:26:29 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:26:59 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:27:29 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:27:59 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:28:29 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:28:59 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:29:29 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:29:59 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:30:26 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f000480430312692b2052a141f2f1b7cafc2271f5
+2023-06-26 09:30:26 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:30:26 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          835
+FOpts:         
+FPort:         18
+FRMPayload:    efbe197bace394b7b931
+encFRMPayload: 692b2052a141f2f1b7ca
+MIC:           fc2271f5
+calcMIC:       b9535232
+
+2023-06-26 09:30:26 | INFO  | DevAddr: 0x04000f20, FCnt: 835, FPort: 18, Data: "efbe197bace394b7b931", MIC_ok: false
+2023-06-26 09:30:29 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:30:59 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:31:29 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:31:59 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:32:29 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:32:48 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f000480440312b93e87e26dce8bd0f11a1239848415ffc0
+2023-06-26 09:32:48 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:32:48 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          836
+FOpts:         
+FPort:         18
+FRMPayload:    edc5a65d5d2c99cc9343134d58
+encFRMPayload: b93e87e26dce8bd0f11a123984
+MIC:           8415ffc0
+calcMIC:       c202afa7
+
+2023-06-26 09:32:48 | INFO  | DevAddr: 0x04000f20, FCnt: 836, FPort: 18, Data: "edc5a65d5d2c99cc9343134d58", MIC_ok: false
+2023-06-26 09:32:59 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:33:26 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f000480450312e616e842c789b240c50490745e328081e4d38e61
+2023-06-26 09:33:26 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:33:26 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          837
+FOpts:         
+FPort:         18
+FRMPayload:    68928b4c77e7bd64714de63cf4c4815d
+encFRMPayload: e616e842c789b240c50490745e328081
+MIC:           e4d38e61
+calcMIC:       98786538
+
+2023-06-26 09:33:26 | INFO  | DevAddr: 0x04000f20, FCnt: 837, FPort: 18, Data: "68928b4c77e7bd64714de63cf4c4815d", MIC_ok: false
+2023-06-26 09:33:29 | ERROR | serde_json::from_str() error Error("missing field `lati`", line: 1, column: 98)
+2023-06-26 09:33:49 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Debug } }
+2023-06-26 09:34:23 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004004703125b6002b711a32bb97a4061f5fbdc5d3b4b273c7c
+2023-06-26 09:34:23 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:34:23 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          839
+FOpts:         
+FPort:         18
+FRMPayload:    80adcf2b48e7b88c41e59724d8009186
+encFRMPayload: 5b6002b711a32bb97a4061f5fbdc5d3b
+MIC:           4b273c7c
+calcMIC:       69f5c956
+
+2023-06-26 09:34:23 | INFO  | DevAddr: 0x04000f20, FCnt: 839, FPort: 18, Data: "80adcf2b48e7b88c41e59724d8009186", MIC_ok: false
+2023-06-26 09:35:02 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f000480480312c0a32748261a7ccf4b9cb2975d532429fc1827c2
+2023-06-26 09:35:02 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:35:02 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          840
+FOpts:         
+FPort:         18
+FRMPayload:    a2f37ec08b6e30a05ca7e7d91b59bc4b
+encFRMPayload: c0a32748261a7ccf4b9cb2975d532429
+MIC:           fc1827c2
+calcMIC:       1ada5e4b
+
+2023-06-26 09:35:02 | INFO  | DevAddr: 0x04000f20, FCnt: 840, FPort: 18, Data: "a2f37ec08b6e30a05ca7e7d91b59bc4b", MIC_ok: false
+2023-06-26 09:35:02 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f000480480312c0a32748261a7ccf4b9cb2975d532429fc1827c2
+2023-06-26 09:35:02 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:35:02 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          840
+FOpts:         
+FPort:         18
+FRMPayload:    a2f37ec08b6e30a05ca7e7d91b59bc4b
+encFRMPayload: c0a32748261a7ccf4b9cb2975d532429
+MIC:           fc1827c2
+calcMIC:       1ada5e4b
+
+2023-06-26 09:35:02 | INFO  | DevAddr: 0x04000f20, FCnt: 840, FPort: 18, Data: "a2f37ec08b6e30a05ca7e7d91b59bc4b", MIC_ok: false
+2023-06-26 09:35:02 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f000480480312c0a32748261a7ccf4b9cb2975d532429fc1827c2
+2023-06-26 09:35:02 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:35:02 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          840
+FOpts:         
+FPort:         18
+FRMPayload:    a2f37ec08b6e30a05ca7e7d91b59bc4b
+encFRMPayload: c0a32748261a7ccf4b9cb2975d532429
+MIC:           fc1827c2
+calcMIC:       1ada5e4b
+
+2023-06-26 09:35:02 | INFO  | DevAddr: 0x04000f20, FCnt: 840, FPort: 18, Data: "a2f37ec08b6e30a05ca7e7d91b59bc4b", MIC_ok: false
+2023-06-26 09:35:42 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004004903129706d468f45fdd07550f286df9c3197e9b3d2f71
+2023-06-26 09:35:42 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:35:42 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          841
+FOpts:         
+FPort:         18
+FRMPayload:    6f061930deda39283e640f57b6e5abf7
+encFRMPayload: 9706d468f45fdd07550f286df9c3197e
+MIC:           9b3d2f71
+calcMIC:       209eb2d9
+
+2023-06-26 09:35:42 | INFO  | DevAddr: 0x04000f20, FCnt: 841, FPort: 18, Data: "6f061930deda39283e640f57b6e5abf7", MIC_ok: false
+2023-06-26 09:35:42 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004004903129706d468f45fdd07550f286df9c3197e9b3d2f71
+2023-06-26 09:35:42 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:35:42 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          841
+FOpts:         
+FPort:         18
+FRMPayload:    6f061930deda39283e640f57b6e5abf7
+encFRMPayload: 9706d468f45fdd07550f286df9c3197e
+MIC:           9b3d2f71
+calcMIC:       209eb2d9
+
+2023-06-26 09:35:42 | INFO  | DevAddr: 0x04000f20, FCnt: 841, FPort: 18, Data: "6f061930deda39283e640f57b6e5abf7", MIC_ok: false
+2023-06-26 09:35:42 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004004903129706d468f45fdd07550f286df9c3197e9b3d2f71
+2023-06-26 09:35:42 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:35:42 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          841
+FOpts:         
+FPort:         18
+FRMPayload:    6f061930deda39283e640f57b6e5abf7
+encFRMPayload: 9706d468f45fdd07550f286df9c3197e
+MIC:           9b3d2f71
+calcMIC:       209eb2d9
+
+2023-06-26 09:35:42 | INFO  | DevAddr: 0x04000f20, FCnt: 841, FPort: 18, Data: "6f061930deda39283e640f57b6e5abf7", MIC_ok: false
+2023-06-26 09:35:42 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004004903129706d468f45fdd07550f286df9c3197e9b3d2f71
+2023-06-26 09:35:42 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:35:43 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          841
+FOpts:         
+FPort:         18
+FRMPayload:    6f061930deda39283e640f57b6e5abf7
+encFRMPayload: 9706d468f45fdd07550f286df9c3197e
+MIC:           9b3d2f71
+calcMIC:       209eb2d9
+
+2023-06-26 09:35:43 | INFO  | DevAddr: 0x04000f20, FCnt: 841, FPort: 18, Data: "6f061930deda39283e640f57b6e5abf7", MIC_ok: false
+2023-06-26 09:36:22 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004004a0312aeaee79db62ce70adfcd0a93104fad6c569ae8f6
+2023-06-26 09:36:22 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:36:22 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          842
+FOpts:         
+FPort:         18
+FRMPayload:    10e3ed29c6b212c77644a30ae722db2c
+encFRMPayload: aeaee79db62ce70adfcd0a93104fad6c
+MIC:           569ae8f6
+calcMIC:       e4c7131e
+
+2023-06-26 09:36:22 | INFO  | DevAddr: 0x04000f20, FCnt: 842, FPort: 18, Data: "10e3ed29c6b212c77644a30ae722db2c", MIC_ok: false
+2023-06-26 09:37:10 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004004b031246a007bcc9095ccd5b7f79f46ae368f67611545c
+2023-06-26 09:37:10 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:37:10 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          843
+FOpts:         
+FPort:         18
+FRMPayload:    dbbe2796f601a6fb2befafabe4b1d011
+encFRMPayload: 46a007bcc9095ccd5b7f79f46ae368f6
+MIC:           7611545c
+calcMIC:       269b04fe
+
+2023-06-26 09:37:10 | INFO  | DevAddr: 0x04000f20, FCnt: 843, FPort: 18, Data: "dbbe2796f601a6fb2befafabe4b1d011", MIC_ok: false
+2023-06-26 09:37:10 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004004b031246a007bcc9095ccd5b7f79f46ae368f67611545c
+2023-06-26 09:37:10 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:37:10 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          843
+FOpts:         
+FPort:         18
+FRMPayload:    dbbe2796f601a6fb2befafabe4b1d011
+encFRMPayload: 46a007bcc9095ccd5b7f79f46ae368f6
+MIC:           7611545c
+calcMIC:       269b04fe
+
+2023-06-26 09:37:10 | INFO  | DevAddr: 0x04000f20, FCnt: 843, FPort: 18, Data: "dbbe2796f601a6fb2befafabe4b1d011", MIC_ok: false
+2023-06-26 09:37:10 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004004b031246a007bcc9095ccd5b7f79f46ae368f67611545c
+2023-06-26 09:37:10 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:37:10 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          843
+FOpts:         
+FPort:         18
+FRMPayload:    dbbe2796f601a6fb2befafabe4b1d011
+encFRMPayload: 46a007bcc9095ccd5b7f79f46ae368f6
+MIC:           7611545c
+calcMIC:       269b04fe
+
+2023-06-26 09:37:10 | INFO  | DevAddr: 0x04000f20, FCnt: 843, FPort: 18, Data: "dbbe2796f601a6fb2befafabe4b1d011", MIC_ok: false
+2023-06-26 09:37:13 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Trace } }
+2023-06-26 09:37:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 02e49e02aa555a0000000101
+2023-06-26 09:37:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 024f3202aa555a0000000101
+2023-06-26 09:37:29 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:56224 Stat { time: "2023-06-26 07:37:29 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 4, rxok: 3, rxfw: 3, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 09:37:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 02fd8202aa555a0000000101
+2023-06-26 09:37:45 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 024ea902aa555a0000000101
+2023-06-26 09:37:47 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004804c0312b5ffeeafe73470ada3c87701091147e0d5d817a4
+2023-06-26 09:37:47 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:37:47 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          844
+FOpts:         
+FPort:         18
+FRMPayload:    15772069b27c4e9b26585c5da6c2a53b
+encFRMPayload: b5ffeeafe73470ada3c87701091147e0
+MIC:           d5d817a4
+calcMIC:       306a8e7f
+
+2023-06-26 09:37:47 | INFO  | DevAddr: 0x04000f20, FCnt: 844, FPort: 18, Data: "15772069b27c4e9b26585c5da6c2a53b", MIC_ok: false
+2023-06-26 09:37:47 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004804c0312b5ffeeafe73470ada3c87701091147e0d5d817a4
+2023-06-26 09:37:47 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:37:47 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          844
+FOpts:         
+FPort:         18
+FRMPayload:    15772069b27c4e9b26585c5da6c2a53b
+encFRMPayload: b5ffeeafe73470ada3c87701091147e0
+MIC:           d5d817a4
+calcMIC:       306a8e7f
+
+2023-06-26 09:37:47 | INFO  | DevAddr: 0x04000f20, FCnt: 844, FPort: 18, Data: "15772069b27c4e9b26585c5da6c2a53b", MIC_ok: false
+2023-06-26 09:37:47 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004804c0312b5ffeeafe73470ada3c87701091147e0d5d817a4
+2023-06-26 09:37:47 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:37:47 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          844
+FOpts:         
+FPort:         18
+FRMPayload:    15772069b27c4e9b26585c5da6c2a53b
+encFRMPayload: b5ffeeafe73470ada3c87701091147e0
+MIC:           d5d817a4
+calcMIC:       306a8e7f
+
+2023-06-26 09:37:47 | INFO  | DevAddr: 0x04000f20, FCnt: 844, FPort: 18, Data: "15772069b27c4e9b26585c5da6c2a53b", MIC_ok: false
+2023-06-26 09:37:55 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 028a2902aa555a0000000101
+2023-06-26 09:38:05 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 029a0a02aa555a0000000101
+2023-06-26 09:38:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 02bcd502aa555a0000000101
+2023-06-26 09:38:23 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004804d031203570bbc4a90e8dbe12c9d2261d202bfb5b1c7fc
+2023-06-26 09:38:23 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:38:23 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          845
+FOpts:         
+FPort:         18
+FRMPayload:    b2209daa2e8883b0b3f08bf6f6bfacdc
+encFRMPayload: 03570bbc4a90e8dbe12c9d2261d202bf
+MIC:           b5b1c7fc
+calcMIC:       97dd198b
+
+2023-06-26 09:38:23 | INFO  | DevAddr: 0x04000f20, FCnt: 845, FPort: 18, Data: "b2209daa2e8883b0b3f08bf6f6bfacdc", MIC_ok: false
+2023-06-26 09:38:23 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004804d031203570bbc4a90e8dbe12c9d2261d202bfb5b1c7fc
+2023-06-26 09:38:23 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:38:23 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          845
+FOpts:         
+FPort:         18
+FRMPayload:    b2209daa2e8883b0b3f08bf6f6bfacdc
+encFRMPayload: 03570bbc4a90e8dbe12c9d2261d202bf
+MIC:           b5b1c7fc
+calcMIC:       97dd198b
+
+2023-06-26 09:38:23 | INFO  | DevAddr: 0x04000f20, FCnt: 845, FPort: 18, Data: "b2209daa2e8883b0b3f08bf6f6bfacdc", MIC_ok: false
+2023-06-26 09:38:23 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:56224 40200f0004804d031203570bbc4a90e8dbe12c9d2261d202bfb5b1c7fc
+2023-06-26 09:38:23 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 09:38:24 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          845
+FOpts:         
+FPort:         18
+FRMPayload:    b2209daa2e8883b0b3f08bf6f6bfacdc
+encFRMPayload: 03570bbc4a90e8dbe12c9d2261d202bf
+MIC:           b5b1c7fc
+calcMIC:       97dd198b
+
+2023-06-26 09:38:24 | INFO  | DevAddr: 0x04000f20, FCnt: 845, FPort: 18, Data: "b2209daa2e8883b0b3f08bf6f6bfacdc", MIC_ok: false
+2023-06-26 09:38:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 02a84402aa555a0000000101
+2023-06-26 09:38:29 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:56224 Stat { time: "2023-06-26 07:38:29 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 4, rxok: 3, rxfw: 3, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 09:38:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 02f38e02aa555a0000000101
+2023-06-26 09:38:46 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 024cd702aa555a0000000101
+2023-06-26 09:38:56 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 022d9b02aa555a0000000101
+2023-06-26 09:38:59 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:56224 Stat { time: "2023-06-26 07:38:59 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 09:39:06 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 02e50602aa555a0000000101
+2023-06-26 09:39:16 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 02c43302aa555a0000000101
+2023-06-26 09:39:26 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 02afcd02aa555a0000000101
+2023-06-26 09:39:29 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:56224 Stat { time: "2023-06-26 07:39:29 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 09:39:36 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:58157 027f2d02aa555a0000000101
+2023-06-26 10:08:10 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Trace } }
+2023-06-26 10:08:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02697302aa555a0000000101
+2023-06-26 10:08:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 0251ff02aa555a0000000101
+2023-06-26 10:08:34 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:08:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:08:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 0229cd02aa555a0000000101
+2023-06-26 10:08:45 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02baab02aa555a0000000101
+2023-06-26 10:08:55 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02e34602aa555a0000000101
+2023-06-26 10:09:04 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:09:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:09:05 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 021be802aa555a0000000101
+2023-06-26 10:09:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02e78d02aa555a0000000101
+2023-06-26 10:09:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02765a02aa555a0000000101
+2023-06-26 10:09:34 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:09:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:09:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02339f02aa555a0000000101
+2023-06-26 10:09:45 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02c99a02aa555a0000000101
+2023-06-26 10:09:55 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02663202aa555a0000000101
+2023-06-26 10:10:04 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:10:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:10:05 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02315802aa555a0000000101
+2023-06-26 10:10:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02255d02aa555a0000000101
+2023-06-26 10:10:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02051702aa555a0000000101
+2023-06-26 10:10:34 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:10:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:10:36 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 025ed402aa555a0000000101
+2023-06-26 10:10:46 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02abb202aa555a0000000101
+2023-06-26 10:10:56 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02cdc602aa555a0000000101
+2023-06-26 10:11:04 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:11:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:11:06 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02541102aa555a0000000101
+2023-06-26 10:11:16 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 020e8202aa555a0000000101
+2023-06-26 10:11:26 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02744102aa555a0000000101
+2023-06-26 10:11:34 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:11:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:11:36 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02dc8702aa555a0000000101
+2023-06-26 10:11:46 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 023ea102aa555a0000000101
+2023-06-26 10:11:56 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 0241e102aa555a0000000101
+2023-06-26 10:12:04 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:12:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:12:06 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 023e0102aa555a0000000101
+2023-06-26 10:12:16 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 027e9702aa555a0000000101
+2023-06-26 10:12:26 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 026b9602aa555a0000000101
+2023-06-26 10:12:34 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:12:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:12:37 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 025c2a02aa555a0000000101
+2023-06-26 10:12:47 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02ecb002aa555a0000000101
+2023-06-26 10:12:57 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 023bfb02aa555a0000000101
+2023-06-26 10:13:04 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:13:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:13:07 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 023c5402aa555a0000000101
+2023-06-26 10:13:17 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02ec1802aa555a0000000101
+2023-06-26 10:13:27 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02021a02aa555a0000000101
+2023-06-26 10:13:34 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:13:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:13:37 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02fbfa02aa555a0000000101
+2023-06-26 10:13:47 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02aa3a02aa555a0000000101
+2023-06-26 10:13:57 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02fb2902aa555a0000000101
+2023-06-26 10:14:04 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:14:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:14:07 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02053c02aa555a0000000101
+2023-06-26 10:14:17 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 027c9402aa555a0000000101
+2023-06-26 10:14:27 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 0275d802aa555a0000000101
+2023-06-26 10:14:35 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:14:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:14:37 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 0289f902aa555a0000000101
+2023-06-26 10:14:48 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 025cbb02aa555a0000000101
+2023-06-26 10:14:58 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02a89902aa555a0000000101
+2023-06-26 10:15:05 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:15:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:15:08 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02b1eb02aa555a0000000101
+2023-06-26 10:15:18 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02f1b302aa555a0000000101
+2023-06-26 10:15:28 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02f70002aa555a0000000101
+2023-06-26 10:15:35 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:15:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:15:38 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 023ae502aa555a0000000101
+2023-06-26 10:15:48 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02cbd002aa555a0000000101
+2023-06-26 10:15:58 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02484702aa555a0000000101
+2023-06-26 10:16:05 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:16:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:16:08 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 021f2302aa555a0000000101
+2023-06-26 10:16:18 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 021ea802aa555a0000000101
+2023-06-26 10:16:28 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 021c7b02aa555a0000000101
+2023-06-26 10:16:35 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:16:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:16:38 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02147302aa555a0000000101
+2023-06-26 10:16:49 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 025ac502aa555a0000000101
+2023-06-26 10:16:59 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 025e4b02aa555a0000000101
+2023-06-26 10:17:05 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:17:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:17:09 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 023b7002aa555a0000000101
+2023-06-26 10:21:35 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Trace } }
+2023-06-26 10:21:41 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 025cd302aa555a0000000101
+2023-06-26 10:21:50 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:55112 0267c602aa555a0000000101
+2023-06-26 10:21:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02369402aa555a0000000101
+2023-06-26 10:22:00 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:55112 02697302aa555a0000000101
+2023-06-26 10:22:01 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02b3af02aa555a0000000101
+2023-06-26 10:22:05 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:22:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:22:10 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:55112 0251ff02aa555a0000000101
+2023-06-26 10:22:11 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02e49e02aa555a0000000101
+2023-06-26 10:22:20 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:48525 Stat { time: "2023-06-26 08:22:21 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:22:21 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:55112 0229cd02aa555a0000000101
+2023-06-26 10:22:21 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 024f3202aa555a0000000101
+2023-06-26 10:22:31 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:55112 02baab02aa555a0000000101
+2023-06-26 10:22:31 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02154902aa555a0000000101
+2023-06-26 10:22:35 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:22:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:22:41 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:55112 02f2fb02aa555a0000000101
+2023-06-26 10:22:41 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 024ea902aa555a0000000101
+2023-06-26 10:22:50 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:48525 Stat { time: "2023-06-26 08:22:51 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:22:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:55112 027cc202aa555a0000000101
+2023-06-26 10:22:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02087002aa555a0000000101
+2023-06-26 10:23:02 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02d4b202aa555a0000000101
+2023-06-26 10:23:05 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:23:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:23:12 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02544802aa555a0000000101
+2023-06-26 10:23:22 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 029a0a02aa555a0000000101
+2023-06-26 10:23:32 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02bcd502aa555a0000000101
+2023-06-26 10:23:35 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:23:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:23:42 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02a84402aa555a0000000101
+2023-06-26 10:23:52 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02ac5b02aa555a0000000101
+2023-06-26 10:24:02 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02f38e02aa555a0000000101
+2023-06-26 10:24:05 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:24:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:24:12 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 022d9b02aa555a0000000101
+2023-06-26 10:24:22 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02094202aa555a0000000101
+2023-06-26 10:24:32 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02e50602aa555a0000000101
+2023-06-26 10:24:35 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:24:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:24:42 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02afcd02aa555a0000000101
+2023-06-26 10:24:52 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02a38402aa555a0000000101
+2023-06-26 10:25:03 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 027f2d02aa555a0000000101
+2023-06-26 10:25:05 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:25:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:25:13 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02764702aa555a0000000101
+2023-06-26 10:25:23 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02de3202aa555a0000000101
+2023-06-26 10:25:33 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 021cec02aa555a0000000101
+2023-06-26 10:25:35 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:25:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:25:43 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 0230f602aa555a0000000101
+2023-06-26 10:25:53 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02202302aa555a0000000101
+2023-06-26 10:26:03 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02856c02aa555a0000000101
+2023-06-26 10:26:05 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:26:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:26:13 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02070402aa555a0000000101
+2023-06-26 10:26:23 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02f4ec02aa555a0000000101
+2023-06-26 10:26:33 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 020bb902aa555a0000000101
+2023-06-26 10:26:35 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:26:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:26:43 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 0286c302aa555a0000000101
+2023-06-26 10:26:53 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 023e0502aa555a0000000101
+2023-06-26 10:26:59 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:35190 0267c602aa555a0000000102
+2023-06-26 10:27:03 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02f1ec02aa555a0000000101
+2023-06-26 10:27:05 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:27:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:27:09 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:35190 02697302aa555a0000000102
+2023-06-26 10:27:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 0233b702aa555a0000000101
+2023-06-26 10:27:19 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:35190 0251ff02aa555a0000000102
+2023-06-26 10:27:24 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02995002aa555a0000000101
+2023-06-26 10:27:29 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45453 Stat { time: "2023-06-26 08:27:30 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:27:30 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:35190 0229cd02aa555a0000000102
+2023-06-26 10:27:34 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02a3e302aa555a0000000101
+2023-06-26 10:27:35 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:27:35 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:27:40 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:35190 02baab02aa555a0000000102
+2023-06-26 10:27:50 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:35190 02f2fb02aa555a0000000102
+2023-06-26 10:27:54 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02f75e02aa555a0000000101
+2023-06-26 10:27:55 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000101 192.168.1.131:55571 40200f0004007a0312efba4a2d4ff48c8293ed
+2023-06-26 10:27:55 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 10:27:55 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x00
+    ADR:       false
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          890
+FOpts:         
+FPort:         18
+FRMPayload:    f56b434fd28e
+encFRMPayload: efba4a2d4ff4
+MIC:           8c8293ed
+calcMIC:       8cf0dfc3
+
+2023-06-26 10:27:55 | INFO  | DevAddr: 0x04000f20, FCnt: 890, FPort: 18, Data: "f56b434fd28e", MIC_ok: false
+2023-06-26 10:27:59 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:45453 Stat { time: "2023-06-26 08:28:00 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:28:00 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:35190 027cc202aa555a0000000102
+2023-06-26 10:28:04 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 0210a802aa555a0000000101
+2023-06-26 10:28:05 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000101 192.168.1.131:55571 Stat { time: "2023-06-26 08:28:05 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 1, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:28:10 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:35190 0254f802aa555a0000000102
+2023-06-26 10:28:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02940102aa555a0000000101
+2023-06-26 10:28:20 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:35190 021be802aa555a0000000102
+2023-06-26 10:28:24 | TRACE | PULL_DATA received from Gateway: aa555a0000000101 192.168.1.131:60264 02beb402aa555a0000000101
+2023-06-26 10:36:28 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Trace } }
+2023-06-26 10:36:34 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02697302aa555a0000000102
+2023-06-26 10:36:44 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 0251ff02aa555a0000000102
+2023-06-26 10:36:54 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:36:55 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:36:54 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 0229cd02aa555a0000000102
+2023-06-26 10:37:04 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02baab02aa555a0000000102
+2023-06-26 10:37:14 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02f2fb02aa555a0000000102
+2023-06-26 10:37:24 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:37:25 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:37:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 027cc202aa555a0000000102
+2023-06-26 10:37:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 0254f802aa555a0000000102
+2023-06-26 10:37:45 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 021be802aa555a0000000102
+2023-06-26 10:37:54 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:37:55 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:37:55 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02765a02aa555a0000000102
+2023-06-26 10:38:05 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 022e6302aa555a0000000102
+2023-06-26 10:38:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02c99a02aa555a0000000102
+2023-06-26 10:38:24 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:38:25 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:38:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 020db702aa555a0000000102
+2023-06-26 10:38:35 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02315802aa555a0000000102
+2023-06-26 10:38:45 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02a35a02aa555a0000000102
+2023-06-26 10:38:54 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:38:55 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:38:55 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02051702aa555a0000000102
+2023-06-26 10:39:05 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 0258e902aa555a0000000102
+2023-06-26 10:39:15 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 025ed402aa555a0000000102
+2023-06-26 10:39:24 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:39:25 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:39:25 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02cdc602aa555a0000000102
+2023-06-26 10:39:36 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 029bb402aa555a0000000102
+2023-06-26 10:39:46 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02541102aa555a0000000102
+2023-06-26 10:39:54 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:39:55 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:39:56 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02744102aa555a0000000102
+2023-06-26 10:40:06 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02213d02aa555a0000000102
+2023-06-26 10:40:16 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02dc8702aa555a0000000102
+2023-06-26 10:40:24 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:40:25 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:40:26 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 023ea102aa555a0000000102
+2023-06-26 10:40:36 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02fc6702aa555a0000000102
+2023-06-26 10:40:43 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:46182 40200f0004808c03121ffc797d489ae50c8b04
+2023-06-26 10:40:43 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 10:40:43 | DEBUG | phy_data_comps: 
+MHDR:
+    Value: 0x40
+    MType: UnconfirmedDataUp
+    RFU:   0
+    Major: LoRaWanR1
+DevAddr:       0x04000f20
+FCtrl:
+    Value:     0x80
+    ADR:       true
+    AdrAckReq: false
+    ACK:       false
+    ClassB:    false
+    FOptsLen:  0
+FCnt:          908
+FOpts:         
+FPort:         18
+FRMPayload:    eb28b110749c
+encFRMPayload: 1ffc797d489a
+MIC:           e50c8b04
+calcMIC:       e713c272
+
+2023-06-26 10:40:43 | INFO  | DevAddr: 0x04000f20, FCnt: 908, FPort: 18, Data: "eb28b110749c", MIC_ok: false
+2023-06-26 10:40:46 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 027e9702aa555a0000000102
+2023-06-26 10:40:54 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:40:55 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 3, rxok: 1, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:40:56 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 028f3802aa555a0000000102
+2023-06-26 10:41:06 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02ecb002aa555a0000000102
+2023-06-26 10:41:16 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 023bfb02aa555a0000000102
+2023-06-26 10:41:24 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:41:25 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:41:26 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 023c5402aa555a0000000102
+2023-06-26 10:41:37 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02db5c02aa555a0000000102
+2023-06-26 10:41:47 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02021a02aa555a0000000102
+2023-06-26 10:41:54 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:46182 Stat { time: "2023-06-26 08:41:55 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:41:57 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02fbfa02aa555a0000000102
+2023-06-26 10:42:07 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02aa3a02aa555a0000000102
+2023-06-26 10:42:17 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:47849 02fb2902aa555a0000000102
+2023-06-26 10:45:18 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 0267c602aa555a0000000102
+2023-06-26 10:45:29 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 02697302aa555a0000000102
+2023-06-26 10:45:39 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 0251ff02aa555a0000000102
+2023-06-26 10:45:48 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:53932 Stat { time: "2023-06-26 08:45:49 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:45:49 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 0229cd02aa555a0000000102
+2023-06-26 10:45:59 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 02baab02aa555a0000000102
+2023-06-26 10:46:03 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:53932 60200f00040012000ba788e3663c
+2023-06-26 10:46:03 | DEBUG | UnconfirmedDataDown|ConfirmedDataDown
+2023-06-26 10:46:09 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 02e34602aa555a0000000102
+2023-06-26 10:46:19 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:53932 Stat { time: "2023-06-26 08:46:19 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:46:19 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 0254f802aa555a0000000102
+2023-06-26 10:46:29 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataUp received from Gateway: aa555a0000000102 192.168.1.131:53932 46ffcbead99bc2ed3f9fa10410d3461dc39622edfa4e7fe2c02935a1e2072ee3979e6dc3824206acf4b9fd96db3bf2decb0d1de4c1d1c03f6caadce237fa812842c20be14f6dd32f0041ca0371dd39e1d99346f39f0679ff115a4aae3378afebcddbcb44a0b04988fbeac3ba9d5f6eb6e3f73afd1a43e6baed7050ddd0a078620c00631877c0a6e3889ab4c747d3d7d9e3e8275d9742f9ce0ef11b57052b56a636da162ac5a6edf23de4de347128cc059b7d033d08ce5823cfb6a5c07dd7bf3793da212bdefef148c0f15302fcbe8953f29145f79d1dececca8ecba09330d40f2aab6d7b70c08f537307
+2023-06-26 10:46:29 | DEBUG | UnconfirmedDataUp|ConfirmedDataUp
+2023-06-26 10:46:29 | ERROR | lorawan::PHYDataComps::new() error: Invalid MHDR value: 70
+2023-06-26 10:46:29 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 02e78d02aa555a0000000102
+2023-06-26 10:46:39 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 02765a02aa555a0000000102
+2023-06-26 10:46:43 | ERROR | lorawan::MType::from_value() error: invalid MType value: 7
+2023-06-26 10:46:49 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:53932 Stat { time: "2023-06-26 08:46:49 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 2, rxok: 0, rxfw: 2, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:46:49 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 02c99a02aa555a0000000102
+2023-06-26 10:46:59 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 02663202aa555a0000000102
+2023-06-26 10:47:09 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 020db702aa555a0000000102
+2023-06-26 10:47:17 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:53932 6899048742beef40e5c208f58fbe8edf42c4b603d7536b477e873f851d2253cf514d7e4b6464e5a723f94d1176e535645aea66d492f044c211884ff3cc5d2d4e650dda2f0bd0cf8d303d6696233ff8e3e1c12c08aaf65fe5edcc9df0068cd70e8b9fd2e0495e38d53bc58ba48f0c452069fd99dd3e3253e04edf4f65b9cb6812e187a9150b9403dd8edd918801588f570529cf079a982ca1c9
+2023-06-26 10:47:17 | DEBUG | UnconfirmedDataDown|ConfirmedDataDown
+2023-06-26 10:47:19 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:53932 Stat { time: "2023-06-26 08:47:19 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 1, rxok: 0, rxfw: 1, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:47:19 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 02255d02aa555a0000000102
+2023-06-26 10:47:30 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:55051 02051702aa555a0000000102
+2023-06-26 10:52:38 | DEBUG | Settings { debug: true, default_key: "00000000000000000000000000000001", udp_server: UdpServer { addr: "0.0.0.0:1700" }, remote_application_server: RemoteApplicationServer { url: "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7", timeout: 5, forward_incorrect_mic: false }, log: Log { dir: "log", file_size: 100000, level: Trace } }
+2023-06-26 10:52:40 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 02697302aa555a0000000102
+2023-06-26 10:52:50 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 0251ff02aa555a0000000102
+2023-06-26 10:53:00 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:33471 Stat { time: "2023-06-26 08:53:01 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:53:00 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 0229cd02aa555a0000000102
+2023-06-26 10:53:07 | DEBUG | PUSH_DATA_RXPK:JoinRequest received from Gateway: aa555a0000000102 192.168.1.131:33471 114e9c4f51af501e3e978125b52b97d82b41663f2ec10d6f79ecc0f92ecd49e0a276ed
+2023-06-26 10:53:07 | DEBUG | JoinRequest
+2023-06-26 10:53:10 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 02f2fb02aa555a0000000102
+2023-06-26 10:53:18 | ERROR | lorawan::MType::from_value() error: invalid MType value: 7
+2023-06-26 10:53:20 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 027cc202aa555a0000000102
+2023-06-26 10:53:27 | DEBUG | PUSH_DATA_RXPK:RejoinRequest received from Gateway: aa555a0000000102 192.168.1.131:33471 c5a4c3f5dddf12810f76af197e9293e792047f16d5c965d2223161a4cf
+2023-06-26 10:53:27 | DEBUG | - RejoinRequest -
+2023-06-26 10:53:30 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:33471 Stat { time: "2023-06-26 08:53:31 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 3, rxok: 0, rxfw: 3, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:53:30 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 02e78d02aa555a0000000102
+2023-06-26 10:53:40 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 02765a02aa555a0000000102
+2023-06-26 10:53:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 022e6302aa555a0000000102
+2023-06-26 10:54:00 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:33471 Stat { time: "2023-06-26 08:54:01 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:54:01 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 02c99a02aa555a0000000102
+2023-06-26 10:54:11 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 02663202aa555a0000000102
+2023-06-26 10:54:21 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 020db702aa555a0000000102
+2023-06-26 10:54:30 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:33471 Stat { time: "2023-06-26 08:54:31 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:54:31 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 02a35a02aa555a0000000102
+2023-06-26 10:54:41 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 02255d02aa555a0000000102
+2023-06-26 10:54:51 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 02051702aa555a0000000102
+2023-06-26 10:55:00 | TRACE | PUSH_DATA_STAT received from Gateway: aa555a0000000102 192.168.1.131:33471 Stat { time: "2023-06-26 08:55:01 GMT", lati: 0.0, long: 0.0, alti: 0, rxnb: 0, rxok: 0, rxfw: 0, ackr: 0.0, dwnb: 0, txnb: 0, temp: 0.0, cpur: 0.0, memr: 0.0, count: 0 }
+2023-06-26 10:55:01 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 025ed402aa555a0000000102
+2023-06-26 10:55:09 | DEBUG | PUSH_DATA_RXPK:UnconfirmedDataDown received from Gateway: aa555a0000000102 192.168.1.131:33471 66f35a3aa76fd908a340a64118ced3462131245b325afde7e367f2b33e876a201a2bd9cd381f190141ef030ebd3fe705fa6e388babc2773fb64c4643f204413a5b4a4d715cbfe7814f24c60b92ac3a5fc88697d51ee6bd8328a84c3bd364303fac4e75e60dbb2ce185fc55d3286f81d8516ed9643338847d9dd2c5f44cbb82ca6177db096b5dc0fa260377117af7617ac31b0d4207ec9b3410f40e547ba55d61a60a57cb1d3d5939d0d71115d6092cd7f894a4fbe0a9d465522069a119bc
+2023-06-26 10:55:09 | DEBUG | UnconfirmedDataDown|ConfirmedDataDown
+2023-06-26 10:55:11 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 02cdc602aa555a0000000102
+2023-06-26 10:55:21 | TRACE | PULL_DATA received from Gateway: aa555a0000000102 192.168.1.131:43823 029bb402aa555a0000000102

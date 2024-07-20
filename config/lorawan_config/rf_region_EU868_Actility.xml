@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RFRegion xmlns="http://uri.actility.com/lora">
+  <RFRegionId>${rfRegion.provID}</RFRegionId>
+  <RFRegionVersion>${rfRegion.version}</RFRegionVersion>
+  <ISMband>${rfRegion.ismBand}</ISMband>
+  
+  <!-- RX1/RX2 configuration parameters -->
+  <MACRxDelay1>1000</MACRxDelay1>
+  <RX1DRoffset>2</RX1DRoffset>
+  <RX2DataRate>3</RX2DataRate>
+  <RX2TxPower>29</RX2TxPower>
+  <RX2Freq>869.525</RX2Freq>
+  <RX2SB>3</RX2SB>
+  <RX2DTC>10</RX2DTC>
+  
+  <!-- Device DutyCycle, TxPower and Channel Mask parameters -->
+  <MaxDutyCycle>0</MaxDutyCycle>
+  <MaxPower>14</MaxPower>
+  <MinPower>2</MinPower>
+  <MaxEIRP>16</MaxEIRP>
+  <MinEIRP>2</MinEIRP>
+  <ChMask>FF</ChMask>
+
+  <!-- ADRv2 configuration parameters -->
+  <Redundancy>1</Redundancy>
+  <margin_db>10.0</margin_db>
+  
+  <!-- ADRv3 configuration parameters -->
+  <Target_PER>0.1</Target_PER> 
+  <Macro_Div_Reliab>0.8</Macro_Div_Reliab>
+  <MinimumAntennaDiversity>1</MinimumAntennaDiversity>  
+  <REP_Min>1</REP_Min>
+  <REP_Max>3</REP_Max> 
+  <SFmin>7</SFmin>
+  <SFmax>12</SFmax>
+  <WindowSize_SNR>50</WindowSize_SNR>
+  <Initial_WindowSize>10</Initial_WindowSize>
+  <Initial_WindowSize_Boot>5</Initial_WindowSize_Boot>
+  <Initial_WindowSize_Optim>25</Initial_WindowSize_Optim>
+  <Forgetting_Factor>0.15</Forgetting_Factor>
+  <Forgetting_Factor_Overlap>0.05</Forgetting_Factor_Overlap>
+  <Hyst_SNR>1</Hyst_SNR> 
+  <Margin_Slope>2</Margin_Slope>
+  <RecoverySF>12</RecoverySF>
+  <RecoveryTxPower>16</RecoveryTxPower>
+  <RecoveryNbTrans>3</RecoveryNbTrans>
+  <PER_Hysteresis>0.5</PER_Hysteresis>
+  <Overlap_Hysteresis>0.0625</Overlap_Hysteresis>
+  
+  <!-- Best-LRR selection optimization (NFR-924) -->
+  <MaxLrrPER_InterRegion>50</MaxLrrPER_InterRegion>
+  <MaxLrrPER_IntraRegion>50</MaxLrrPER_IntraRegion>  
+
+  <!-- RX2 optimization configuration parameters -->
+  <margin_uplink>12.0</margin_uplink>
+  <SF_limit>9</SF_limit>
+  
+  <!-- Limit SNR per SF -->  
+  <SNR_limit_SF7>-7.0</SNR_limit_SF7>
+  <SNR_limit_SF8>-9.0</SNR_limit_SF8>
+  <SNR_limit_SF9>-11.5</SNR_limit_SF9>
+  <SNR_limit_SF10>-14.0</SNR_limit_SF10>
+  <SNR_limit_SF11>-16.5</SNR_limit_SF11>
+  <SNR_limit_SF12>-19.0</SNR_limit_SF12>
+  
+  <!-- LRR configuration: EIRP and radio center frequency -->
+  <LRR_power>16</LRR_power>
+  <RadioCenterFrequency>866.5</RadioCenterFrequency>
+  
+  <!-- ClassB Parameters -->
+  <ClassBEnabled>1</ClassBEnabled>
+  <BeaconPeriod>128</BeaconPeriod>
+  <BeaconRandomization>100</BeaconRandomization>
+    
+  <RedundancyDeduplicationTimer>3600</RedundancyDeduplicationTimer>
+  
+
+  <!-- Channel plan configuration -->
+  <RxChannels>
+
+    <RxChannel>
+      <ChIndex>0</ChIndex>
+      <IsDefault>1</IsDefault>
+      <LC>1</LC>
+      <Frequency>868.1</Frequency>
+	  <SB>1</SB>
+	  <DTC>1</DTC> 
+      <MinDR>0</MinDR>
+      <MaxDR>5</MaxDR>
+    </RxChannel>
+    <RxChannel>
+      <ChIndex>1</ChIndex>
+      <IsDefault>1</IsDefault>
+      <LC>2</LC>
+      <Frequency>868.3</Frequency>
+	  <SB>1</SB>
+	  <DTC>1</DTC> 
+      <MinDR>0</MinDR>
+      <MaxDR>5</MaxDR>
+    </RxChannel>
+    <RxChannel>
+      <ChIndex>2</ChIndex>
+      <IsDefault>1</IsDefault>
+      <LC>3</LC>
+      <Frequency>868.5</Frequency>
+	  <SB>1</SB> 
+	  <DTC>1</DTC> 
+      <MinDR>0</MinDR>
+      <MaxDR>5</MaxDR>
+    </RxChannel>
+    <RxChannel>
+      <ChIndex>3</ChIndex>
+      <LC>4</LC>
+      <Frequency>867.10</Frequency>
+	  <SB>2</SB> 
+	  <DTC>1</DTC> 
+      <MinDR>0</MinDR>
+      <MaxDR>5</MaxDR>
+      <LRR_power>+1</LRR_power>
+    </RxChannel>
+    <RxChannel>
+      <ChIndex>4</ChIndex>
+      <LC>5</LC>
+      <Frequency>867.30</Frequency>
+	  <SB>2</SB>
+	  <DTC>1</DTC> 
+      <MinDR>0</MinDR>
+      <MaxDR>5</MaxDR>
+      <LRR_power>+1</LRR_power>
+    </RxChannel>
+    <RxChannel>
+      <ChIndex>5</ChIndex>
+      <LC>6</LC>
+      <Frequency>867.50</Frequency>
+	  <SB>2</SB>
+	  <DTC>1</DTC> 
+      <MinDR>0</MinDR>
+      <MaxDR>5</MaxDR>
+      <LRR_power>+1</LRR_power>
+    </RxChannel>
+    <RxChannel>
+      <ChIndex>6</ChIndex>
+      <LC>7</LC>
+      <Frequency>867.70</Frequency>
+	  <SB>2</SB> 
+	  <DTC>1</DTC> 
+      <MinDR>0</MinDR>
+      <MaxDR>5</MaxDR>
+      <LRR_power>+1</LRR_power>
+    </RxChannel>
+    <RxChannel>
+      <ChIndex>7</ChIndex>
+      <LC>8</LC>
+      <Frequency>867.90</Frequency>
+	  <SB>2</SB> 
+	  <DTC>1</DTC> 
+      <MinDR>0</MinDR>
+      <MaxDR>5</MaxDR>
+      <LRR_power>+1</LRR_power>
+    </RxChannel>
+
+  </RxChannels>
+  
+  <TxChannels>
+  
+    <TxChannel>
+      <LC>253</LC>
+      <UsedForBeacon>1</UsedForBeacon>
+      <Frequency>869.525</Frequency>
+	  <SB>3</SB> 
+	  <DTC>10</DTC> 
+      <MaxDR>3</MaxDR>
+	  <LRR_power>+13</LRR_power>
+    </TxChannel>
+	<TxChannel>
+      <LC>254</LC>
+      <UsedForPingSlot>1</UsedForPingSlot>
+      <Frequency>869.525</Frequency>
+	  <SB>3</SB> 
+	  <DTC>10</DTC> 
+      <MaxDR>3</MaxDR>
+	  <LRR_power>+13</LRR_power>
+    </TxChannel>
+	
+  </TxChannels>
+
+</RFRegion>

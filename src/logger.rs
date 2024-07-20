@@ -1,80 +1,112 @@
-use crate::get_settings_once;
 
-// use log::LevelFilter;
-
-use log4rs::Config;
-use log4rs::config::{Appender, Root};
-use log4rs::encode::pattern::PatternEncoder;
-use log4rs::append::{
-    console::ConsoleAppender, 
-    rolling_file::{
-        RollingFileAppender,
-        policy::compound::{
-            CompoundPolicy, roll::fixed_window::FixedWindowRoller, trigger::size::SizeTrigger,
+use std::{process, sync::Once};
+use log4rs::{
+    config::{
+        Appender,
+        Config,
+        // Logger,
+        Root
+    },
+    encode::pattern::PatternEncoder,
+    append::{
+        console::ConsoleAppender, 
+        rolling_file::{
+            RollingFileAppender,
+            policy::compound::{
+                CompoundPolicy, 
+                roll::fixed_window::FixedWindowRoller, 
+                trigger::size::SizeTrigger,
+            }
         }
     }
 };
-
-use std::sync::Once;
+use crate::settings::Settings;
 
 static ONCE_CONTROLLER_FOR_LOGGER: Once = Once::new();
 
-pub fn init_logger_once() {
+pub fn init_logger_once(settings: &Settings) {
     ONCE_CONTROLLER_FOR_LOGGER.call_once(|| {
-        init_logger();
+        init_logger(settings);
     });
 }
 
-fn init_logger() {
+fn init_logger(settings: &Settings) {
 
-    let settings = get_settings_once();
-    
-    // log4rs::init_file("config/log4rs.yaml", Default::default()).unwrap();
-
-    // let log_line_pattern_debug = "{d(%Y-%m-%d %H:%M:%S)} | {({l}):5.5} | {f}:{L} — {m}{n}";
     let log_line_pattern = "{d(%Y-%m-%d %H:%M:%S)} | {({l}):5.5} | {m}{n}";
 
-    let trigger_size = settings.log.file_size; // byte_unit::n_mb_bytes!(30) as u64;
-    let trigger = Box::new(SizeTrigger::new(trigger_size));
+    // CREATING THE CONSOLE APPENDER
+
+    let console_appender = ConsoleAppender::builder()
+        .encoder(Box::new(PatternEncoder::new(log_line_pattern)))
+        .build();
+
+    // CREATING THE ROLLING FILE APPENDER
+
+    let trigger = Box::new(
+        SizeTrigger::new(
+            settings.log.file_size
+        )
+    );
 
     let roller_pattern = &(settings.log.dir.clone() + "/archive_{}.log");
-    
     let roller_count = 5;
     let roller_base = 1;
     let roller = Box::new(
         FixedWindowRoller::builder()
             .base(roller_base)
             .build(roller_pattern, roller_count)
-            .unwrap(),
+            .unwrap_or_else(|e| {
+                eprintln!("error: {}", e);
+                process::exit(1)
+            })
     );
 
-    let compound_policy = Box::new(CompoundPolicy::new(trigger, roller));
+    let rolling_file_appender = RollingFileAppender::builder()
+        .encoder(
+            Box::new(PatternEncoder::new(log_line_pattern))
+        )
+        .build(
+            &(settings.log.dir.clone() + "/current.log"), 
+            Box::new(CompoundPolicy::new(trigger, roller))
+        )
+        .unwrap_or_else(|e| {
+            eprintln!("error: {}", e);
+            process::exit(1)
+        });
 
-    let stdout = ConsoleAppender::builder()
-        .encoder(Box::new(PatternEncoder::new(log_line_pattern)))
-        .build();
-
-    let roller = RollingFileAppender::builder()
-        .encoder(Box::new(PatternEncoder::new(log_line_pattern)))
-        .build(&(settings.log.dir.clone() + "/current.log"), compound_policy)
-        .unwrap();
+    // CREATING THE CONFIG
 
     let config = Config::builder()
-        .appender(Appender::builder().build("stdout", Box::new(stdout)))
-        .appender(Appender::builder().build("roller", Box::new(roller)))
+        .appender(Appender::builder().build("console_appender", Box::new(console_appender)))
+        .appender(Appender::builder().build("rolling_file_appender", Box::new(rolling_file_appender)))
         // .logger(
         //     Logger::builder()
-        //         .appender("roller")
-        //         .build("rolling_logger", settings.log.level),
+        //         .appender("rolling_file_appender")
+        //         .build("rolling_file_logger", settings.log.level),
+        // )
+        // .logger(
+        //     Logger::builder()
+        //         .appender("console_appender")
+        //         .build("console_logger", settings.log.level),
         // )
         .build(
             Root::builder()
-                .appender("stdout")
-                .appender("roller")
+                .appender("console_appender")
+                .appender("rolling_file_appender")
                 .build(settings.log.level)
         )
-        .unwrap();
+        .unwrap_or_else(|e| {
+            eprintln!("error: {}", e);
+            process::exit(1)
+        });
 
-    let _log_handle = log4rs::init_config(config).unwrap();
+
+    // INITIATING THE LOGGER
+
+    let _log_handle = log4rs::init_config(config)
+        .unwrap_or_else(|e| {
+            eprintln!("error: {}", e);
+            process::exit(1)
+        });
 
 }

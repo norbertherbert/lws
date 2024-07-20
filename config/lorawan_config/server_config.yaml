@@ -1,0 +1,36 @@
+#
+# server_config.yaml
+#
+---
+ns:
+  ns_id: 0x0000000000000001
+  net_ids: 
+    - 0xb00001
+    - 0xb00002
+    - 0xb00003
+  global_params_for_all_rf_regions:
+    RECEIVE_DELAY1:        1   # s
+    RECEIVE_DELAY2:        2   # s (SHALL be RECEIVE_DELAY1 + 1s)
+    RX1DROffset:           0   # (table index)
+    JOIN_ACCEPT_DELAY1:    5   # s
+    JOIN_ACCEPT_DELAY2:    6   # s
+    MAX_FCNT_GAP:          16384  # Deprecated in LW1.0.4
+    ADR_ACK_LIMIT:         64
+    ADR_ACK_DELAY:         32
+    RETRANSMIT_TIMEOUT:    2   # +/- 1s (random delay between 1 and 3 seconds)
+    DownlinkDwellTime:     0   # (No downlink dwell time enforced, impacts data rate offset calculations)
+    # UplinkDwellTime:     ??? # Uplink dwell time is country specific and is the responsibly of the end-device to comply with
+    PING_SLOT_PERIODICITY: 7   # (2^7 = 128s)
+    # PING_SLOT_DATARATE:  ??? # The value of the BEACON DR defined for each regional band
+    # PING_SLOT_CHANNEL:   ??? # Defined in each regional band
+    CLASS_B_RESP_TIMEOUT:  8   # s must always be greater than the largest possible value of
+                               #   RETRANSMIT_TIMEOUT plus the maximum possible time-on-air of an uplink frame
+    CLASS_C_RESP_TIMEOUT:  8   # s must always be greater than the largest possible value of
+                               #   RETRANSMIT_TIMEOUT plus the maximum possible time-on-air of an uplink frame
+
+js:
+  join_euis:
+    - 0xaa00000000000001
+    - 0xaa00000000000002
+    - 0xaa00000000000003
+...

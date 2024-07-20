@@ -1,232 +1,176 @@
-// use futures::executor::block_on;
+use std::{ 
+    str, net, thread
+};
 
-use log::{info, 
-    // warn, 
-    error, debug, trace};
+// use log::{ info, warn, error, debug, trace };
+// use tokio::task;
 
-use std::time::Duration;
-use std::{str, net::UdpSocket};
+use anyhow::Result as AnyResult;
 
-use tokio::task;
-
-use lws::{get_settings_once, init_logger_once};
-
-use lws::lorawan_pdu::{
-    PktfMType, MType, 
-    // RXPacket, Stat, 
-    PushData, PHYDataComps
+use lws::{ 
+    settings, logger, pktf, dd_cache,
+    settings::Settings, 
+    handle_rx_packet::handle_rx_packet,
 };
 
 #[tokio::main]
-async fn main() -> Result<(), Box<dyn std::error::Error>> {
+async fn main() -> AnyResult<()> {
 
-    let settings = get_settings_once();
-    init_logger_once();
+    let settings = settings::get_or_init();
 
-    debug!("{:?}", settings);
+    logger::init_logger_once(settings);
 
-    // error!("this is an error");
-    // info!("this is an info");
-    // warn!("this is a warn");
+    log::debug!("{:?}", settings);
 
-    udp_server().await?;
+    dd_cache::init_dd_cache();
+
+    udp_server(settings).await?;
 
     Ok(())
 
 }
 
-async fn udp_server() -> Result<(), Box<dyn std::error::Error>> {
+async fn udp_server(settings: &Settings) -> AnyResult<()> {
 
-    let settings = get_settings_once();
-
-    let socket = UdpSocket::bind(&settings.udp_server.addr).unwrap();
-    let mut buf = [0; 1000];
+    let socket = net::UdpSocket::bind(&settings.udp_server.addr).expect("UdpSocket::bind() must work");
+    let mut buf = [0; 1024];
     loop {
-        let (n, addr) = socket.recv_from(&mut buf).unwrap();
+
+        let (n, addr) = socket.recv_from(&mut buf).expect("socket.recv_from() must always work");
+
+        if n > 1024 {
+            log::error!("the received packet is longer than {}: {}", 1024, n);
+            continue;
+        }        
+        
         let buf = &mut buf[..n];
         
-        // trace!("{}", hex::encode(&buf));
+        // log::trace!("{}", hex::encode(&buf));
 
-        let protocol_version = buf[0];
-        let pktf_mtype = PktfMType::from_u8(buf[3]); // TODO: manage panic
-        let gateway_id = hex::encode(&buf[4..12]);
 
-        if protocol_version != 2 { // PKTF_PROTOCOL_VERSION_V2 {
-			error!(
-				"Message received from {}; Invalid protocol version: {}",
+
+        let protocol_version = match pktf::ProtocolVersion::from_value(buf[0]) {
+            Ok(x) => x,
+            Err(e) => {
+                log::error!("pktf::ProtocolVersion::from_value() error: {:?}", e);
+                continue;
+            }
+        };
+
+        let pktf_mtype = match pktf::MType::from_value(buf[3]) {
+            Ok(x) => x,
+            Err(e) => {
+                log::error!("pktf::MType::from_value() error: {:?}", e);
+                continue;
+            }
+        };
+
+        let gw_eui: u64 = u64::from_le_bytes(buf[4..12].try_into().unwrap());
+
+
+
+
+        if !matches!(protocol_version, pktf::ProtocolVersion::V2) {
+			log::error!(
+				"Message received from {}; Invalid protocol version: {:?}",
 				&addr, &protocol_version,
 			);
-			error!("  data: {:?}", hex::encode(&buf));
+			log::error!("  data: {:?}", hex::encode(&buf));
 			continue;
 		}
 
         match pktf_mtype {
-            PktfMType::PushData => {
+            pktf::MType::PushData => {
 
-                /*
-                trace!(
-                    "PUSH_DATA received from Gateway: {} {} {}",
-                    &gateway_id, &addr, str::from_utf8(&buf[12..n]).unwrap(),
-                );
-                */
+                // Send ACK
+                let ack_msg = &mut buf[0..4];
+                ack_msg[3] = pktf::MType::PushAck as u8;
+                socket.send_to(ack_msg, &addr)
+                    .expect("socket.send_to() must always work");
 
-                // TODO: Error handling!
-                let push_data_struct: PushData = serde_json::from_str(
-                    str::from_utf8(&buf[12..n]).unwrap()
-                ).unwrap();
+
+                let push_data_str = match str::from_utf8(&buf[12..n]) {
+                    Ok(x) => x,
+                    Err(e) => {
+                        log::error!("str::from_utf8() error {:?}", e);
+                        continue;
+                    }
+                };
+            
+                let push_data_struct: pktf::PushData = match serde_json::from_str(push_data_str) {
+                    Ok(x) => x,
+                    Err(e) => {
+                        log::error!("serde_json::from_str() error {:?}", e);
+                        continue;
+                    }
+                };
 
                 if let Some(stat) = push_data_struct.stat {
-                    trace!(
-                        "PUSH_DATA_STAT received from Gateway: {} {} {:?}",
-                        &gateway_id, &addr, stat,
+                    log::trace!(
+                        "PUSH_DATA_STAT received from Gateway: x{:16x} IP: {} Port: {} Stat: {:?}",
+                        &gw_eui, &addr.ip(), &addr.port(), stat,
                     );
                 }
 
                 if let Some(rxpk) = push_data_struct.rxpk {
                     for rx_packet in rxpk {
 
-                        let d = base64::decode(rx_packet.data).unwrap();
+                        thread::spawn(move || {
 
-                        /*
-                        debug!(
-                            "PUSH_DATA_RXPK received from Gateway: {} {} {}",
-                            &gateway_id, &addr, hex::encode(&d),
-                        );
-                        */
-    
-                        let mtype_u8 = (d[0] & 0b11100000) >> 5;
-                        let mtype = MType::from_u8(mtype_u8);
+                            
+                            let sp_fact = if &rx_packet.datr[3..4] == "B" { &rx_packet.datr[..3] } else { &rx_packet.datr[..4] };
+                            let sp_fact = sp_fact.parse::<u8>().unwrap();
 
-                        debug!(
-                            "PUSH_DATA_RXPK:{:?} received from Gateway: {} {} {}",
-                            mtype, &gateway_id, &addr, hex::encode(&d),
-                        );
+                            let dd_data = dd_cache::DDData {
+                                gw_eui: gw_eui,
+                                freq: rx_packet.freq,
+                                sp_fact,
+                                rssi: rx_packet.rssi,
+                                snr: rx_packet.lsnr
+                            };
 
-                        match mtype {
-                            MType::JoinRequest => {
-                                debug!("JoinRequest");
-                            },
-                            MType::JoinAccept => {
-                                debug!("JoinAccept");
-                            },
-                            MType::UnconfirmedDataUp | MType::ConfirmedDataUp => {
+                            let is_first = dd_cache::add_data(dd_data, &rx_packet.data);
+                            if !is_first { return };
 
-                                debug!("UnconfirmedDataUp|ConfirmedDataUp");
+                            thread::sleep(dd_cache::DD_PERIOD);
 
-                                let mut app_s_key_array = [0_u8; 16];
-                                hex::decode_to_slice(&settings.default_key, &mut app_s_key_array).expect("decoding of default_key from config file has failed");
-                                let app_s_key = Some(&app_s_key_array);
-                                let nwk_s_key = app_s_key.clone();
+                            let collected_dd_data = dd_cache::take_collected_data(&rx_packet.data);
 
-                                // let app_s_key: Option<&[u8; 16]> = Some(&[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]);
-                                // let nwk_s_key: Option<&[u8; 16]> = Some(&[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]);
+                            handle_rx_packet(collected_dd_data, &rx_packet);
 
-                                let phy_data_comps = PHYDataComps::new(&d, app_s_key, nwk_s_key).unwrap();
-                                
-                                debug!("phy_data_comps: {}", phy_data_comps);
+                            // dedup::clean_cache();
 
-
-
-                                let dev_addr_text = format!("{:08x}", phy_data_comps.dev_addr);
-                                let f_cnt_text = format!("{}", phy_data_comps.f_cnt);
-                                let f_port_text = match &phy_data_comps.f_port {
-                                    Some(f_port) => format!("{}", f_port),
-                                    None => String::from("")
-                                };
-                                let frm_payload_text = match &phy_data_comps.frm_payload {
-                                    Some(frm_payload) => format!("{}", frm_payload),
-                                    None => String::from("")
-                                };
-                                let mic_ok = phy_data_comps.calc_mic == Some(phy_data_comps.mic);
-
-                                info!(
-                                    "DevAddr: 0x{}, FCnt: {}, FPort: {}, Data: \"{}\", MIC_ok: {}",
-                                    dev_addr_text, f_cnt_text, f_port_text, frm_payload_text, mic_ok
-                                );
-
-                                let sp_fact: &str;
-                                if &rx_packet.datr[3..4] == "B" {
-                                    sp_fact = &rx_packet.datr[2..3];
-                                } else {
-                                    sp_fact = &rx_packet.datr[2..4];
-                                }
-
-                                // let sp_fact_text = &rx_packet.datr[2..4];
-                                // let lrr_id_text = &gateway_id;
-                                // let lrr_rssi_text = rx_packet.rssi;
-                                // let lrr_snr_text = rx_packet.lsnr;
-
-                                if mic_ok || settings.remote_application_server.forward_incorrect_mic {
-                                    let data_to_send = format!(
-r#"
-{{ 
-    "DevEUI_Uplink": {{ 
-        "DevAddr": "{}", 
-        "FCntUp": "{}", 
-        "FPort": "{}", 
-        "payload_hex": "{}",
-        "SpFact": "{}",
-        "Lrrs": {{ 
-            "Lrr": [
-                {{
-                    "Lrrid": "{}",
-                    "LrrRSSI": "{}",
-                    "LrrSNR": "{}",
-                }} 
-            ] 
-        }} 
-    }}
-}}
-"#,
-                                        dev_addr_text, f_cnt_text, f_port_text, frm_payload_text,
-                                        sp_fact, &gateway_id, rx_packet.rssi, rx_packet.lsnr,
-
-                                    );
-                                    let _concurrent_future = task::spawn(
-                                        async {
-                                            let result = send_to_app_server(data_to_send).await;
-                                            match result {
-                                                Ok(()) => { println!("Message sent to AS") }
-                                                Err(..) => { println!("Failed to forward to AS") }
-                                            }
-                                        }
-                                    );
-                                }
-
-
-
-
-                            },
-                            MType::UnconfirmedDataDown | MType::ConfirmedDataDown => {
-                                debug!("UnconfirmedDataDown|ConfirmedDataDown");
-                            },
-                            MType::RejoinRequest => {
-                                debug!("- RejoinRequest -");
-                            },
-                        }
+                        });
 
                     }
                 }
-
+               
             },
-            PktfMType::PullData => {
-                trace!(
-                    "PULL_DATA received from Gateway: {} {} {}",
-                    &gateway_id, &addr, hex::encode(&buf),
-                );
+            
+            pktf::MType::PullData => {
+
+                // Send ACK
                 let ack_msg = &mut buf[0..4];
-                ack_msg[3] = PktfMType::PullAck as u8;
-                socket.send_to(ack_msg, &addr).unwrap();
+                ack_msg[3] = pktf::MType::PullAck as u8;
+                socket.send_to(ack_msg, &addr).expect("socket.send_to() must always work");
+
+                log::trace!(
+                    "PULL_DATA received from Gateway: x{:16x} IP: {} Port: {} Data: {}",
+                    gw_eui, &addr.ip(), &addr.port(), hex::encode(&buf),
+                );
+
             },
-            PktfMType::TxAck => {
-                trace!(
-                    "TX_ACK received from Gateway: {} {} {}",
-                    &gateway_id, &addr, hex::encode(&buf),
+            pktf::MType::TxAck => {
+                log::trace!(
+                    "TX_ACK received from Gateway: x{:16x} IP:{} Port:{} Data: {}",
+                    &gw_eui, &addr.ip(), &addr.port(), hex::encode(&buf),
                 );
             },
 
-            PktfMType::PushAck | PktfMType::PullAck => {} | PktfMType::PullResp => {
-                // TODO: Invalid PktfMType
+            // DOWNLINK MESSAGES that are always invalid...
+            pktf::MType::PushAck | pktf::MType::PullAck | pktf::MType::PullResp => {
+                log::error!("Invalid pktf::MType: {:?}", pktf_mtype);
+                continue;
             },
 
         }
@@ -235,10 +179,10 @@ r#"
 
 }
 
+/*
+async fn send_to_app_server(http_body: String) -> AnyResult<()> {
 
-async fn send_to_app_server(http_body: String) -> Result<(), Box<dyn std::error::Error>> {
-
-    let settings = get_settings_once();
+    let settings = settings::get_settings_once();
 
     let mut headers = reqwest::header::HeaderMap::new();
     headers.insert(reqwest::header::AUTHORIZATION, reqwest::header::HeaderValue::from_static("SECRET"));
@@ -247,12 +191,12 @@ async fn send_to_app_server(http_body: String) -> Result<(), Box<dyn std::error:
     let client = reqwest::Client::builder()
         // .gzip(true)
         .default_headers(headers)
-        .timeout(Duration::from_secs(settings.remote_application_server.timeout))
+        .timeout(time::Duration::from_secs(setngs.remote_application_server.timeout))
         .build()?;
 
     let res = client
         // .post("http://httpbin.org/anything")
-        .post(&settings.remote_application_server.url)
+        .post(&setngs.remote_application_server.url)
         // .post("https://webhook.site/fe6dd9e6-6f92-45ec-b842-d313422da3e3xxxx")
         // .post("https://asdf")
         // .json(http_body)
@@ -277,3 +221,4 @@ async fn send_to_app_server(http_body: String) -> Result<(), Box<dyn std::error:
     Ok(())
 
 }
+*/

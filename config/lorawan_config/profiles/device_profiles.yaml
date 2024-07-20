@@ -1,0 +1,26 @@
+#
+# device_profiles.yaml
+# indexed by DeviceProfileID - M, Unique identifier for the set of End-device parameters
+#
+---
+'LW1.2_EU868_ClassA'         # M, Unique identifier for the set of End-device parameters
+  SupportsClassB:    false        # M, End-Device supports Class B 
+  ClassBTimeout:                  # O, Maximum delay for the End-Device to answer a MAC request or a confirmed DL frame (mandatory if class B mode supported). Used as CLASS_B_RESP_TIMEOUT in [LW104].
+  PingSlotPeriod:                 # O, Mandatory if class B mode supported
+  PingSlotDR:                     # O, Mandatory if class B mode supported
+  PingSlotFreq:                   # O, Mandatory if class B mode supported
+  SupportsClassC:    false        # M, End-Device supports Class C 
+  ClassCTimeout:                  # O, Maximum delay for the End-Device to answer a MAC request or a confirmed DL frame (mandatory if class C mode supported). Used as CLASS_C_RESP_TIMEOUT in [LW104].
+  MACVersion:        '1.2'        # M, Version of the LoRaWAN supported by the End-Device
+  RegParamsRevision: RP002-1.0.3  # M, Revision of the Regional Parameters document supported by the End-Device, according to the RevisionID in that document 
+  SupportsJoin:      true         # M, End-Device supports Join (OTAA) or not (ABP)
+  RXDelay1:                       # O, Class A RX1 delay (mandatory for ABP)
+  RXDROffset1:                    # O, RX1 data rate offset (mandatory for ABP)
+  RXDataRate2:                    # O, RX2 data rate (mandatory for ABP). See Note 2.
+  RXFreq2:                        # O, RX2 channel frequency (mandatory for ABP)
+  FactoryPresetFreqs:             # O, List of factory-preset frequencies (mandatory for ABP)
+  MaxEIRP:                        # M, Maximum EIRP supported by the End-Device
+  MaxDutyCycle:                   # O, Maximum duty cycle supported by the End-Device
+  RFRegion:          eu868        # M, Regional Parameter Channel Plan Common Name, according to the Regional Parameter document 
+  Supports32bitFCnt: true         # O, End-Device uses 32bit FCnt (mandatory for LoRaWAN 1.0 End-Device)
+...

@@ -12,4 +12,4 @@ forward_incorrect_mic = false
 [log]
 dir = "log"
 file_size = 100000    # bytes
-level = "Debug"       # Off|Error|Warn|Info|Debug|Trace,
+level = "Trace"       # Error|Warn|Info|Debug|Trace

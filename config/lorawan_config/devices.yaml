@@ -1,0 +1,49 @@
+#
+# devices.yaml
+# indexed by DevEUI
+#
+---
+0x0000000000000001:                           # DevEUI
+  ns:                                         # Parameters stored on the Network Server
+    # parameters with 'x_' prefix are proprietary
+    x_is_enabled:          true
+    x_dev_addr:            0x00000001         # if emty, then it should be assigned automatically from a pool
+    x_activation_type:     OTAInternalJS      # OTAInternalJS or OTA or ABP
+    x_join_eui_white_list:                    # if empty, all JoinEUIs are accepted
+      - 0xaabbccddaabbccdd
+      - 0xaabbccddaabbccee
+    device_profile_id:     LW1.2_EU868_ClassA # devvice_profiles.yaml
+    service_profile_id:    GoldService        # service_profiles.yaml
+    routing_profile_id:    My1stWebhook       # routing_profiles.yaml
+    session_context:                          # data stored in the NS's session context 
+      cipher_id:           DEFAULT
+      version_id:          1.0
+      nwk_s_key:           '00112233445566778899aabbccddeeff'
+      ## f_nwk_s_int_key:  '00112233445566778899aabbccddeeff'
+      ## s_nwk_s_int_key:  '00112233445566778899aabbccddeeff'
+      ## nwk_s_enc_key:    '00112233445566778899aabbccddeeff'
+      app_s_key:           '00112233445566778899aabbccddeeff'
+      dev_addr:            0x00000001
+      f_cnt_up:            0x00000000
+      f_cnt_down:          0x00000000         # LW1.0.4 line #678
+      ## n_f_cnt_down:     0x00000000         # LW1.2.0 D45 line #908
+      ## a_f_cnt_down:     0x00000000
+      ## rj_count_02:      0x0000
+    signaling_context:                        # data stored in NS's signaling context
+      channels: []
+      
+  js:                                         # Parameters stored on the Join Server
+    app_key:               '00112233445566778899aabbccddeeff'
+    ## nwk_key:            '00112233445566778899aabbccddeeff'
+    ## js_int_key:         '00112233445566778899aabbccddeeff'
+    ## js_enc_key:         '00112233445566778899aabbccddeeff'
+    home_net_id:           0xaabbcc
+    as_id:                 ???
+    ## a way to select the preferred network
+    lora_wan_version:      '1.0.4'            # It is part of the device profile too, must be consistent!
+
+    dev_nonce:             0x0000             # LW1.2.0 D45 line #2368
+    ## rj_count_1:         0x0000
+    join_nonce:            0x000000
+
+...

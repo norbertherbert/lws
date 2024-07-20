@@ -13,11 +13,12 @@ default_key = "00000000000000000000000000000001"
 # addr = "192.168.1.200:1700"
 
 [remote_application_server]
-url = "https://webhook.site/0652c864-00c9-46ce-994f-c48c689f2204"
+url = "https://webhook.site/845afd69-47ff-474e-aa63-6120286261d7"
+
 # timeout = 5           # seconds
 # forward_incorrect_mic = false
 
 [log]
 # dir = "log"
 # file_size = 100000    # bytes
-level = "Info"       # Off|Error|Warn|Info|Debug|Trace,
+level = "Debug"       # Off|Error|Warn|Info|Debug|Trace,

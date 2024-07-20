@@ -1,0 +1,208 @@
+#
+# rf_regions.yaml
+#
+---
+# EU863-870
+EU868:      # Regional Parameter Channel Plan Common Name, according to the Regional Parameter document
+
+  # freq_band:                    [863, 870]               # [min_freq_mhz, max_freq_mhz]
+  # mandatory_ch_freqs:           [868.10, 868.30, 868.50] # MHz
+  # join_req_dr_range:            [0, 5]                   # [MinDR, MaxDR]
+  cf_list_type:                   0
+  # mandatory_dr_range:           [0, 5]                   #
+  # optional_dr_range_options:    [[6,7], [6,11]]          # 
+  # num_of_channels:              16
+  # mandatory_ch_range:           [0, 2]
+  # default_rx1_dr_offset:        0
+  # allowed_rx1_dr_offset:        [0, 5]
+  # max_duty_cycle:               1                        # %
+  # dwell_time_limitation:        No
+  tx_param_setup_req_support:     No
+  default_max_eirp:               16                       # dB
+  default_rx2_dr:                 0
+  default_rx2_freq:               869.525                  # MHz
+  default_class_b_beacon_freq:    869.525                  # MHz
+  default_class_b_ping_slot_freq: 869.525                  # MHz
+
+  class_b_beacon_dr:              3
+  class_b_beacon_cr:              1
+
+  sub_bands: 
+    - id: 0
+      freq_range: [868.00, 868.60]
+      max_duty_cycle: 1
+      # max_dwell_time: 400        # ms
+      max_tx_power: 16
+    - id: 1
+      freq_range: [867.00, 868.00]
+      max_duty_cycle: 1
+      # max_dwell_time: 400        # ms
+      max_tx_power: 16
+    - id: 2
+      freq_range: [869.525]
+      max_duty_cycle: 10
+      # max_dwell_time: 400        # ms
+      max_tx_power: 29
+
+
+  channels:
+
+    # sub_band: 0, type: default
+    - ch_index: 0
+      sub_band: 0
+      type:     default        # default|optional|rx2|class_b_beacon|# default|optional|rx2|class_b_beacon|class_b_ping_slot
+      freq:     868.10
+      dr_range: [0, 5]
+    - ch:index: 1
+      sub_band: 0
+      type:     default
+      freq:     868.30
+      dr_range: [0, 5]
+    - ch:index: 2
+      sub_band: 0
+      type:     default
+      freq:     868.50
+      dr_range: [0, 5]
+
+    # sub_band: 1, type: optional
+    - ch:index: 3
+      sub_band: 1
+      type:     optional
+      freq:     867.10
+      dr_range: [0, 5]
+    - ch:index: 4
+      sub_band: 1
+      type:     optional
+      freq:     867.30
+      dr_range: [0, 5]
+    - ch:index: 5
+      sub_band: 1
+      type:     optional
+      freq:     867.50
+      dr_range: [0, 5]
+    - ch:index: 6
+      sub_band: 1
+      type:     optional
+      freq:     867.70
+      dr_range: [0, 5]
+    - ch:index: 7
+      sub_band: 1
+      type:     optional
+      freq:     867.90
+      dr_range: [0, 5]
+
+    # sub_band: 2
+    - ch_index: 252
+      sub_band: 2
+      type:     rx2
+      freq:     869.525
+      dr_range: [0, 3]
+    - ch_index:   253
+      sub_band:   2
+      type:       class_b_beacon
+      freq:       869.525
+      dr_range:   [0, 3]
+    - ch_index:   254
+      sub_band:   2
+      type:       class_b_ping_slot
+      freq:       869.525
+      dr_range:   [0, 3]
+  
+  data_rates:
+    # DR: [ Modulation, SF or CR, Banwidth [kHz], Indicative Bit Rate [bit/s] ]
+    0:  [ lora,   SF12,  125,   250 ]
+    1:  [ lora,   SF11,  125,   440 ]
+    2:  [ lora,   SF10,  125,   980 ]
+    3:  [ lora,   SF9,   125,  1760 ]
+    4:  [ lora,   SF8,   125,  3125 ]
+    5:  [ lora,   SF7,   125,  5470 ]
+    6:  [ lora,   SF7,   250, 11000 ]
+    7:  [ fsk,    SF7,   250, 50000 ]
+    8:  [ lrfhss, CR1/3, 137,   162 ]
+    9:  [ lrfhss, CR2/3, 137,   325 ]
+    10: [ lrfhss, CR1/3, 336,   162 ]
+    11: [ lrfhss, CR2/3, 336,   325 ]
+    # 12..14: RFU
+    # 15: Defined in [TS001]
+
+  dr_next:  # the next data rate the end-device SHALL use during data rate back-off
+    0:  0 
+    1:  0
+    2:  1
+    3:  2
+    4:  3
+    5:  4
+    6:  5
+    7:  6
+    8:  0
+    9:  8
+    10: 0
+    11: 10
+
+  tx_power: # MaxEIRP-xdB
+    0: 0    # MaxEIRP-0dB
+    1: 2    # MaxEIRP-2dB
+    2: 4    # MaxEIRP-4dB
+    3: 6    # MaxEIRP-6dB
+    4: 8    # MaxEIRP-8dB
+    5: 10   # MaxEIRP-10dB
+    6: 12   # MaxEIRP-12dB
+    7: 14   # MaxEIRP-14dB
+    # 8..14 RFU
+    # 15 Deefined in [TS001]
+
+  max_payload_size:
+    # DR: M
+    # M: Max MACPayload length
+    # N: Max FRMPayload length if there is no FOpts = M-8
+    0:  59
+    1:  59
+    2:  59
+    3:  123
+    4:  230
+    5:  230
+    6:  230
+    7:  230
+    8:  58
+    9:  123
+    10: 58
+    11: 123
+    # 12..15: not defined
+
+  max_payload_size_no_repeater:
+    # if the end-devices will never operte with a repeater
+    # DR: M
+    # M: Max MACPayload length
+    # N: Max FRMPayload length if there is no FOpts = M-8
+    0:  59
+    1:  59
+    2:  59
+    3:  123
+    4:  250
+    5:  250
+    6:  250
+    7:  250
+    8:  58
+    9:  123
+    10: 58
+    11: 123
+    # 12..15: not defined
+
+  rx1_dl_dr:
+    # rx1_dl_dr[UpstreamDataRate][RX1DROffset]
+    [
+      [0, 0, 0, 0, 0, 0], # UpstreamDataRate: 0
+      [1, 0, 0, 0, 0, 0], # UpstreamDataRate: 1
+      [2, 1, 0, 0, 0, 0], # UpstreamDataRate: 2
+      [3, 2, 1, 0, 0, 0], # UpstreamDataRate: 3
+      [4, 3, 2, 1, 0, 0], # UpstreamDataRate: 4
+      [5, 4, 3, 2, 1, 0], # UpstreamDataRate: 5
+      [6, 5, 4, 3, 2, 1], # UpstreamDataRate: 6
+      [7, 6, 5, 4, 3, 2], # UpstreamDataRate: 7
+      [1, 0, 0, 0, 0, 0], # UpstreamDataRate: 8
+      [2, 1, 0, 0, 0, 0], # UpstreamDataRate: 9
+      [1, 0, 0, 0, 0, 0], # UpstreamDataRate: 10
+      [2, 1, 0, 0, 0, 0], # UpstreamDataRate: 11
+    ]
+
+...

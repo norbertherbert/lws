@@ -1,0 +1,6 @@
+# gateways.yaml
+# indexed by GwEUI
+---
+0x0000000000000001:
+0x0000000000000002:
+...

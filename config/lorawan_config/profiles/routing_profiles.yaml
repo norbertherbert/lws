@@ -1,0 +1,16 @@
+#
+# routing_profiles.yaml
+# indexed by RoutingProfileID
+#
+---
+'My1stWebhook':                 # RoutingProfileID - M, Unique identifier for the set of routing parameters
+  AS-ID:              My1stServer   # M, ID of the AS
+  RoutingProfileType: Webhook
+  DestinationURL:     https://example1.com
+  APIKey:             aabbcc
+'My2ndWebhook':                 # RoutingProfileID - M, Unique identifier for the set of routing parameters
+  AS-ID:              My2ndServer   # M, ID of the AS
+  RoutingProfileType: Webhook
+  DestinationURL:     https://example2.com
+  APIKey:             aabbcc
+...

@@ -1,19 +1,24 @@
-use config::{Config, ConfigError, Environment, File};
+use std:: {
+    env, process,
+    sync::OnceLock,
+};
+use config::{Config, ConfigError};
 use serde_derive::Deserialize;
-use std::env;
-use std::sync::Once;
+
+// This is the local, manual copy of the definition of the external log::LevelFilter type
 
 #[derive(Debug, Deserialize)]
 #[allow(unused)]
 #[serde(remote = "log::LevelFilter")]
 pub enum LogLevelFilterDef {
-    Off,
     Error,
     Warn,
     Info,
     Debug,
     Trace,
 }
+
+// The definition of the "Settings" structure
 
 #[derive(Debug, Deserialize)]
 #[allow(unused)]
@@ -47,32 +52,81 @@ pub struct Settings {
     pub remote_application_server: RemoteApplicationServer,
     pub log: Log,
 }
+impl Settings {
+    fn new() -> Result<Settings, ConfigError> {
 
-static ONCE_CONTROLLER_FOR_SETTINGS: Once = Once::new();
-static mut SETTINGS: Option<Settings> = None;
+        // the default values of the "Settings" structure
 
-pub fn get_settings_once() -> &'static Settings {
-    unsafe {
-        ONCE_CONTROLLER_FOR_SETTINGS.call_once(|| {
-            SETTINGS = Some(get_settings().unwrap());
-        });
-        SETTINGS.as_ref().unwrap()
+        let cfg_txt = 
+r#"
+debug = true
+default_key = "00000000000000000000000000000000"
+
+[udp_server]
+addr = "0.0.0.0:1700"
+
+[remote_application_server]
+url = "http://localhost"
+timeout = 5           # seconds
+forward_incorrect_mic = false
+
+[log]
+dir = "log"
+file_size = 100000    # bytes
+level = "Trace"       # Error|Warn|Info|Debug|Trace
+"#;
+
+        let _default_settings = Settings {
+            debug: true,
+            default_key: "00000000000000000000000000000000".to_owned(),
+            udp_server: UdpServer {
+                addr: "0.0.0.0:1700".to_owned(), 
+            },
+            remote_application_server: RemoteApplicationServer {
+                url: "http://localhost".to_owned(),
+                timeout: 5, // seconds
+                forward_incorrect_mic: false,
+            },
+            log: Log {
+                dir: "log".to_owned(),
+                file_size: 100_000, // bytes
+                level: log::LevelFilter::Trace, // Error|Warn|Info|Debug|Trace
+            }
+        };
+
+        let run_mode = env::var("RUN_MODE").unwrap_or_else(|_| "development".into());
+        Config::builder()
+            .add_source(config::File::with_name("config/default.toml"))
+            .add_source(config::File::with_name(&format!("config/{}.toml", run_mode)).required(false))
+            .add_source(config::File::with_name("config/local.toml").required(false))
+            .add_source(config::Environment::with_prefix("lws"))
+            .build()?
+            .try_deserialize::<Settings>()
     }
 }
 
-fn get_settings() -> Result<Settings, ConfigError> {
-    
-    let run_mode = env::var("RUN_MODE").unwrap_or_else(|_| "development".into());
 
-    let s = Config::builder()
-        .add_source(File::with_name("config/default.toml"))
-        .add_source(File::with_name(&format!("config/{}.toml", run_mode)).required(false))
-        .add_source(File::with_name("config/local.toml").required(false))
-        .add_source(Environment::with_prefix("lws"))
-        .build()?;
-    s.try_deserialize()
 
+pub static SETTINGS: OnceLock<Settings> = OnceLock::new();
+
+
+pub fn init() {
+    SETTINGS.set(
+        Settings::new().unwrap_or_else(|e| {
+            eprintln!("error: {:?}", e);
+            process::exit(1);
+        })
+    ).unwrap_or_else(|v| {
+        eprintln!("The Settings cannot be set (probably because it has already been set) {:?}", v);
+        process::exit(1);     
+    });
 }
 
-
-
+pub fn get_or_init() -> &'static Settings {
+    SETTINGS.get_or_init(|| {
+        Settings::new().unwrap_or_else(|e| { 
+            eprintln!("error: {:?}", e);
+            process::exit(1);
+        })
+    })
+}
